@@ -1,0 +1,1055 @@
+2024-01-07 07:19:17 | INFO | fairseq_cli.train | {'_name': None, 'common': {'_name': None, 'no_progress_bar': False, 'log_interval': 100, 'log_format': 'simple', 'log_file': None, 'aim_repo': None, 'aim_run_hash': None, 'tensorboard_logdir': None, 'wandb_project': None, 'azureml_logging': False, 'seed': 222, 'cpu': False, 'tpu': False, 'bf16': False, 'memory_efficient_bf16': False, 'fp16': False, 'memory_efficient_fp16': False, 'fp16_no_flatten_grads': False, 'fp16_init_scale': 128, 'fp16_scale_window': None, 'fp16_scale_tolerance': 0.0, 'on_cpu_convert_precision': False, 'min_loss_scale': 0.0001, 'threshold_loss_scale': None, 'amp': False, 'amp_batch_retries': 2, 'amp_init_scale': 128, 'amp_scale_window': None, 'user_dir': None, 'empty_cache_freq': 0, 'all_gather_list_size': 16384, 'model_parallel_size': 1, 'quantization_config_path': None, 'profile': False, 'reset_logging': False, 'suppress_crashes': False, 'use_plasma_view': False, 'plasma_path': '/tmp/plasma'}, 'common_eval': {'_name': None, 'path': None, 'post_process': None, 'quiet': False, 'model_overrides': '{}', 'results_path': None}, 'distributed_training': {'_name': None, 'distributed_world_size': 1, 'distributed_num_procs': 1, 'distributed_rank': 0, 'distributed_backend': 'nccl', 'distributed_init_method': None, 'distributed_port': -1, 'device_id': 0, 'distributed_no_spawn': False, 'ddp_backend': 'legacy_ddp', 'ddp_comm_hook': 'none', 'bucket_cap_mb': 25, 'fix_batches_to_gpus': False, 'find_unused_parameters': False, 'gradient_as_bucket_view': False, 'fast_stat_sync': False, 'heartbeat_timeout': -1, 'broadcast_buffers': False, 'slowmo_momentum': None, 'slowmo_base_algorithm': 'localsgd', 'localsgd_frequency': 3, 'nprocs_per_node': 1, 'pipeline_model_parallel': False, 'pipeline_balance': None, 'pipeline_devices': None, 'pipeline_chunks': 0, 'pipeline_encoder_balance': None, 'pipeline_encoder_devices': None, 'pipeline_decoder_balance': None, 'pipeline_decoder_devices': None, 'pipeline_checkpoint': 'never', 'zero_sharding': 'none', 'fp16': False, 'memory_efficient_fp16': False, 'tpu': False, 'no_reshard_after_forward': False, 'fp32_reduce_scatter': False, 'cpu_offload': False, 'use_sharded_state': False, 'not_fsdp_flatten_parameters': False}, 'dataset': {'_name': None, 'num_workers': 1, 'skip_invalid_size_inputs_valid_test': False, 'max_tokens': 1024, 'batch_size': None, 'required_batch_size_multiple': 8, 'required_seq_len_multiple': 1, 'dataset_impl': None, 'data_buffer_size': 10, 'train_subset': 'train', 'valid_subset': 'valid', 'combine_valid_subsets': None, 'ignore_unused_valid_subsets': False, 'validate_interval': 1, 'validate_interval_updates': 0, 'validate_after_updates': 5000, 'fixed_validation_seed': None, 'disable_validation': False, 'max_tokens_valid': 1024, 'batch_size_valid': None, 'max_valid_steps': None, 'curriculum': 0, 'gen_subset': 'test', 'num_shards': 1, 'shard_id': 0, 'grouped_shuffling': False, 'update_epoch_batch_itr': False, 'update_ordered_indices_seed': False}, 'optimization': {'_name': None, 'max_epoch': 0, 'max_update': 0, 'stop_time_hours': 0.0, 'clip_norm': 0.0, 'sentence_avg': False, 'update_freq': [2], 'lr': [3e-05], 'stop_min_lr': -1.0, 'use_bmuf': False, 'skip_remainder_batch': False, 'debug_param_names': False}, 'checkpoint': {'_name': None, 'save_dir': '/home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10', 'restore_file': '/home2/chu/fairseq_sign/sign/pretrained_models/mbart.cc25.v2/model.pt', 'continue_once': None, 'finetune_from_model': None, 'reset_dataloader': True, 'reset_lr_scheduler': True, 'reset_meters': True, 'reset_optimizer': True, 'optimizer_overrides': '{}', 'save_interval': 1, 'save_interval_updates': 0, 'keep_interval_updates': -1, 'keep_interval_updates_pattern': -1, 'keep_last_epochs': -1, 'keep_best_checkpoints': 5, 'no_save': False, 'no_epoch_checkpoints': True, 'no_last_checkpoints': False, 'no_save_optimizer_state': False, 'best_checkpoint_metric': 'loss', 'maximize_best_checkpoint_metric': False, 'patience': -1, 'checkpoint_suffix': '', 'checkpoint_shard_count': 1, 'load_checkpoint_on_all_dp_ranks': False, 'write_checkpoints_asynchronously': False, 'model_parallel_size': 1}, 'bmuf': {'_name': None, 'block_lr': 1.0, 'block_momentum': 0.875, 'global_sync_iter': 50, 'warmup_iterations': 500, 'use_nbm': False, 'average_sync': False, 'distributed_world_size': 1}, 'generation': {'_name': None, 'beam': 5, 'beam_mt': 0, 'nbest': 1, 'max_len_a': 0.0, 'max_len_b': 200, 'max_len_a_mt': 0.0, 'max_len_b_mt': 200, 'min_len': 1, 'match_source_len': False, 'unnormalized': False, 'no_early_stop': False, 'no_beamable_mm': False, 'lenpen': 1.0, 'lenpen_mt': 1.0, 'unkpen': 0.0, 'replace_unk': None, 'sacrebleu': False, 'score_reference': False, 'prefix_size': 0, 'no_repeat_ngram_size': 0, 'sampling': False, 'sampling_topk': -1, 'sampling_topp': -1.0, 'constraints': None, 'temperature': 1.0, 'diverse_beam_groups': -1, 'diverse_beam_strength': 0.5, 'diversity_rate': -1.0, 'print_alignment': None, 'print_step': False, 'lm_path': None, 'lm_weight': 0.0, 'iter_decode_eos_penalty': 0.0, 'iter_decode_max_iter': 10, 'iter_decode_force_max_iter': False, 'iter_decode_with_beam': 1, 'iter_decode_with_external_reranker': False, 'retain_iter_history': False, 'retain_dropout': False, 'retain_dropout_modules': None, 'decoding_format': None, 'no_seed_provided': False, 'eos_token': None}, 'eval_lm': {'_name': None, 'output_word_probs': False, 'output_word_stats': False, 'context_window': 0, 'softmax_batch': 9223372036854775807}, 'interactive': {'_name': None, 'buffer_size': 0, 'input': '-'}, 'model': Namespace(_name='mbart_large', activation_fn='gelu', adam_betas='(0.9, 0.98)', adam_eps=1e-06, adaptive_softmax_cutoff=None, adaptive_softmax_dropout=0, aim_repo=None, aim_run_hash=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, arch='mbart_large', attention_dropout=0.1, azureml_logging=False, batch_size=None, batch_size_valid=None, best_checkpoint_metric='loss', bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_shard_count=1, checkpoint_suffix='', clip_norm=0.0, combine_valid_subsets=None, continue_once=None, cpu=False, cpu_offload=False, criterion='label_smoothed_cross_entropy', curriculum=0, data='/home2/chu/fairseq_sign/sign/dataset/sp-10/index/de-en/add_short_mt_mbart_index', data_buffer_size=10, dataset_impl=None, ddp_backend='legacy_ddp', ddp_comm_hook='none', debug_param_names=False, decoder_attention_heads=16, decoder_embed_dim=1024, decoder_embed_path=None, decoder_ffn_embed_dim=4096, decoder_input_dim=1024, decoder_layers=12, decoder_learned_pos=True, decoder_normalize_before=True, decoder_output_dim=1024, device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_num_procs=1, distributed_port=-1, distributed_rank=0, distributed_world_size=1, dropout=0.3, ema_decay=0.9999, ema_fp32=False, ema_seed_model=None, ema_start_update=0, ema_update_freq=1, empty_cache_freq=0, encoder_attention_heads=16, encoder_embed_dim=1024, encoder_embed_path=None, encoder_ffn_embed_dim=4096, encoder_layers=12, encoder_learned_pos=True, encoder_normalize_before=True, end_learning_rate=0.0, eos=2, eval_bleu=False, eval_bleu_args='{}', eval_bleu_detok='space', eval_bleu_detok_args='{}', eval_bleu_print_samples=False, eval_bleu_remove_bpe=None, eval_tokenized_bleu=False, fast_stat_sync=False, find_unused_parameters=False, finetune_from_model=None, fix_batches_to_gpus=False, fixed_validation_seed=None, force_anneal=None, fp16=False, fp16_adam_stats=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, fp32_reduce_scatter=False, gen_subset='test', gradient_as_bucket_view=False, grouped_shuffling=False, heartbeat_timeout=-1, ignore_prefix_size=0, ignore_unused_valid_subsets=False, keep_best_checkpoints=5, keep_interval_updates=-1, keep_interval_updates_pattern=-1, keep_last_epochs=-1, label_smoothing=0.2, langs='ar_AR,cs_CZ,de_DE,en_XX,es_XX,et_EE,fi_FI,fr_XX,gu_IN,hi_IN,it_IT,ja_XX,kk_KZ,ko_KR,lt_LT,lv_LV,my_MM,ne_NP,nl_XX,ro_RO,ru_RU,si_LK,tr_TR,vi_VN,zh_CN', layernorm_embedding=True, left_pad_source=True, left_pad_target=False, load_alignments=False, load_checkpoint_on_all_dp_ranks=False, localsgd_frequency=3, log_file=None, log_format='simple', log_interval=100, lr=[3e-05], lr_scheduler='polynomial_decay', max_epoch=0, max_source_positions=1024, max_target_positions=1024, max_tokens=1024, max_tokens_valid=1024, max_update=0, max_valid_steps=None, maximize_best_checkpoint_metric=False, memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_epoch_checkpoints=True, no_last_checkpoints=False, no_progress_bar=False, no_reshard_after_forward=False, no_save=False, no_save_optimizer_state=False, no_scale_embedding=False, no_seed_provided=False, not_fsdp_flatten_parameters=False, nprocs_per_node=1, num_batch_buckets=0, num_shards=1, num_workers=1, on_cpu_convert_precision=False, optimizer='adam', optimizer_overrides='{}', pad=1, patience=-1, pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=0, pipeline_decoder_balance=None, pipeline_decoder_devices=None, pipeline_devices=None, pipeline_encoder_balance=None, pipeline_encoder_devices=None, pipeline_model_parallel=False, plasma_path='/tmp/plasma', pooler_activation_fn='tanh', pooler_dropout=0.0, power=1.0, prepend_bos=False, profile=False, quantization_config_path=None, relu_dropout=0.0, report_accuracy=False, required_batch_size_multiple=8, required_seq_len_multiple=1, reset_dataloader=True, reset_logging=False, reset_lr_scheduler=True, reset_meters=True, reset_optimizer=True, restore_file='/home2/chu/fairseq_sign/sign/pretrained_models/mbart.cc25.v2/model.pt', save_dir='/home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10', save_interval=1, save_interval_updates=0, scoring='bleu', seed=222, sentence_avg=False, shard_id=0, share_all_embeddings=True, share_decoder_input_output_embed=True, skip_invalid_size_inputs_valid_test=False, skip_remainder_batch=False, slowmo_base_algorithm='localsgd', slowmo_momentum=None, source_lang='de_DE', stop_min_lr=-1.0, stop_time_hours=0, store_ema=False, suppress_crashes=False, target_lang='en_XX', task='translation_from_pretrained_bart', tensorboard_logdir=None, threshold_loss_scale=None, tokenizer=None, total_num_update='40000', tpu=False, train_subset='train', truncate_source=False, unk=3, update_epoch_batch_itr=False, update_freq=[2], update_ordered_indices_seed=False, upsample_primary=-1, use_bmuf=False, use_old_adam=False, use_plasma_view=False, use_sharded_state=False, user_dir=None, valid_subset='valid', validate_after_updates=5000, validate_interval=1, validate_interval_updates=0, wandb_project=None, warmup_updates=2500, weight_decay=0.0, write_checkpoints_asynchronously=False, zero_sharding='none'), 'task': Namespace(_name='translation_from_pretrained_bart', activation_fn='gelu', adam_betas='(0.9, 0.98)', adam_eps=1e-06, adaptive_softmax_cutoff=None, adaptive_softmax_dropout=0, aim_repo=None, aim_run_hash=None, all_gather_list_size=16384, amp=False, amp_batch_retries=2, amp_init_scale=128, amp_scale_window=None, arch='mbart_large', attention_dropout=0.1, azureml_logging=False, batch_size=None, batch_size_valid=None, best_checkpoint_metric='loss', bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_shard_count=1, checkpoint_suffix='', clip_norm=0.0, combine_valid_subsets=None, continue_once=None, cpu=False, cpu_offload=False, criterion='label_smoothed_cross_entropy', curriculum=0, data='/home2/chu/fairseq_sign/sign/dataset/sp-10/index/de-en/add_short_mt_mbart_index', data_buffer_size=10, dataset_impl=None, ddp_backend='legacy_ddp', ddp_comm_hook='none', debug_param_names=False, decoder_attention_heads=16, decoder_embed_dim=1024, decoder_embed_path=None, decoder_ffn_embed_dim=4096, decoder_input_dim=1024, decoder_layers=12, decoder_learned_pos=True, decoder_normalize_before=True, decoder_output_dim=1024, device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_num_procs=1, distributed_port=-1, distributed_rank=0, distributed_world_size=1, dropout=0.3, ema_decay=0.9999, ema_fp32=False, ema_seed_model=None, ema_start_update=0, ema_update_freq=1, empty_cache_freq=0, encoder_attention_heads=16, encoder_embed_dim=1024, encoder_embed_path=None, encoder_ffn_embed_dim=4096, encoder_layers=12, encoder_learned_pos=True, encoder_normalize_before=True, end_learning_rate=0.0, eos=2, eval_bleu=False, eval_bleu_args='{}', eval_bleu_detok='space', eval_bleu_detok_args='{}', eval_bleu_print_samples=False, eval_bleu_remove_bpe=None, eval_tokenized_bleu=False, fast_stat_sync=False, find_unused_parameters=False, finetune_from_model=None, fix_batches_to_gpus=False, fixed_validation_seed=None, force_anneal=None, fp16=False, fp16_adam_stats=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, fp32_reduce_scatter=False, gen_subset='test', gradient_as_bucket_view=False, grouped_shuffling=False, heartbeat_timeout=-1, ignore_prefix_size=0, ignore_unused_valid_subsets=False, keep_best_checkpoints=5, keep_interval_updates=-1, keep_interval_updates_pattern=-1, keep_last_epochs=-1, label_smoothing=0.2, langs='ar_AR,cs_CZ,de_DE,en_XX,es_XX,et_EE,fi_FI,fr_XX,gu_IN,hi_IN,it_IT,ja_XX,kk_KZ,ko_KR,lt_LT,lv_LV,my_MM,ne_NP,nl_XX,ro_RO,ru_RU,si_LK,tr_TR,vi_VN,zh_CN', layernorm_embedding=True, left_pad_source=True, left_pad_target=False, load_alignments=False, load_checkpoint_on_all_dp_ranks=False, localsgd_frequency=3, log_file=None, log_format='simple', log_interval=100, lr=[3e-05], lr_scheduler='polynomial_decay', max_epoch=0, max_source_positions=1024, max_target_positions=1024, max_tokens=1024, max_tokens_valid=1024, max_update=0, max_valid_steps=None, maximize_best_checkpoint_metric=False, memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_epoch_checkpoints=True, no_last_checkpoints=False, no_progress_bar=False, no_reshard_after_forward=False, no_save=False, no_save_optimizer_state=False, no_scale_embedding=False, no_seed_provided=False, not_fsdp_flatten_parameters=False, nprocs_per_node=1, num_batch_buckets=0, num_shards=1, num_workers=1, on_cpu_convert_precision=False, optimizer='adam', optimizer_overrides='{}', pad=1, patience=-1, pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=0, pipeline_decoder_balance=None, pipeline_decoder_devices=None, pipeline_devices=None, pipeline_encoder_balance=None, pipeline_encoder_devices=None, pipeline_model_parallel=False, plasma_path='/tmp/plasma', pooler_activation_fn='tanh', pooler_dropout=0.0, power=1.0, prepend_bos=False, profile=False, quantization_config_path=None, relu_dropout=0.0, report_accuracy=False, required_batch_size_multiple=8, required_seq_len_multiple=1, reset_dataloader=True, reset_logging=False, reset_lr_scheduler=True, reset_meters=True, reset_optimizer=True, restore_file='/home2/chu/fairseq_sign/sign/pretrained_models/mbart.cc25.v2/model.pt', save_dir='/home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10', save_interval=1, save_interval_updates=0, scoring='bleu', seed=222, sentence_avg=False, shard_id=0, share_all_embeddings=True, share_decoder_input_output_embed=True, skip_invalid_size_inputs_valid_test=False, skip_remainder_batch=False, slowmo_base_algorithm='localsgd', slowmo_momentum=None, source_lang='de_DE', stop_min_lr=-1.0, stop_time_hours=0, store_ema=False, suppress_crashes=False, target_lang='en_XX', task='translation_from_pretrained_bart', tensorboard_logdir=None, threshold_loss_scale=None, tokenizer=None, total_num_update='40000', tpu=False, train_subset='train', truncate_source=False, unk=3, update_epoch_batch_itr=False, update_freq=[2], update_ordered_indices_seed=False, upsample_primary=-1, use_bmuf=False, use_old_adam=False, use_plasma_view=False, use_sharded_state=False, user_dir=None, valid_subset='valid', validate_after_updates=5000, validate_interval=1, validate_interval_updates=0, wandb_project=None, warmup_updates=2500, weight_decay=0.0, write_checkpoints_asynchronously=False, zero_sharding='none'), 'criterion': {'_name': 'label_smoothed_cross_entropy', 'label_smoothing': 0.2, 'report_accuracy': False, 'ignore_prefix_size': 0, 'sentence_avg': False}, 'optimizer': {'_name': 'adam', 'adam_betas': '(0.9, 0.98)', 'adam_eps': 1e-06, 'weight_decay': 0.0, 'use_old_adam': False, 'fp16_adam_stats': False, 'tpu': False, 'lr': [3e-05]}, 'lr_scheduler': {'_name': 'polynomial_decay', 'warmup_updates': 2500, 'force_anneal': None, 'end_learning_rate': 0.0, 'power': 1.0, 'total_num_update': 40000.0, 'lr': [3e-05]}, 'scoring': {'_name': 'bleu', 'pad': 1, 'eos': 2, 'unk': 3}, 'bpe': None, 'tokenizer': None, 'ema': {'_name': None, 'store_ema': False, 'ema_decay': 0.9999, 'ema_start_update': 0, 'ema_seed_model': None, 'ema_update_freq': 1, 'ema_fp32': False}}
+2024-01-07 07:19:19 | INFO | fairseq.tasks.translation | [de_DE] dictionary: 250001 types
+2024-01-07 07:19:19 | INFO | fairseq.tasks.translation | [en_XX] dictionary: 250001 types
+2024-01-07 07:19:36 | INFO | fairseq_cli.train | BARTModel(
+  (encoder): TransformerEncoderBase(
+    (dropout_module): FairseqDropout()
+    (embed_tokens): Embedding(250027, 1024, padding_idx=1)
+    (embed_positions): LearnedPositionalEmbedding(1026, 1024, padding_idx=1)
+    (layernorm_embedding): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+    (layers): ModuleList(
+      (0): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (1): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (2): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (3): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (4): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (5): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (6): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (7): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (8): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (9): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (10): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (11): TransformerEncoderLayerBase(
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (dropout_module): FairseqDropout()
+        (activation_dropout_module): FairseqDropout()
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TransformerDecoderBase(
+    (dropout_module): FairseqDropout()
+    (embed_tokens): Embedding(250027, 1024, padding_idx=1)
+    (embed_positions): LearnedPositionalEmbedding(1026, 1024, padding_idx=1)
+    (layernorm_embedding): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+    (layers): ModuleList(
+      (0): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (1): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (2): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (3): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (4): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (5): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (6): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (7): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (8): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (9): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (10): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+      (11): TransformerDecoderLayerBase(
+        (dropout_module): FairseqDropout()
+        (self_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (activation_dropout_module): FairseqDropout()
+        (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (encoder_attn): MultiheadAttention(
+          (dropout_module): FairseqDropout()
+          (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+        (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+        (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+    (output_projection): Linear(in_features=1024, out_features=250027, bias=False)
+  )
+  (classification_heads): ModuleDict()
+)
+2024-01-07 07:19:36 | INFO | fairseq_cli.train | task: TranslationFromPretrainedBARTTask
+2024-01-07 07:19:36 | INFO | fairseq_cli.train | model: BARTModel
+2024-01-07 07:19:36 | INFO | fairseq_cli.train | criterion: LabelSmoothedCrossEntropyCriterion
+2024-01-07 07:19:36 | INFO | fairseq_cli.train | num. shared model params: 610,851,840 (num. trained: 610,851,840)
+2024-01-07 07:19:36 | INFO | fairseq_cli.train | num. expert model params: 0 (num. trained: 0)
+2024-01-07 07:19:36 | INFO | fairseq.data.data_utils | loaded 142 examples from: /home2/chu/fairseq_sign/sign/dataset/sp-10/index/de-en/add_short_mt_mbart_index/valid.de_DE-en_XX.de_DE
+2024-01-07 07:19:36 | INFO | fairseq.data.data_utils | loaded 142 examples from: /home2/chu/fairseq_sign/sign/dataset/sp-10/index/de-en/add_short_mt_mbart_index/valid.de_DE-en_XX.en_XX
+2024-01-07 07:19:36 | INFO | fairseq.tasks.translation | /home2/chu/fairseq_sign/sign/dataset/sp-10/index/de-en/add_short_mt_mbart_index valid de_DE-en_XX 142 examples
+2024-01-07 07:19:46 | INFO | fairseq.trainer | detected shared parameter: encoder.embed_tokens.weight <- decoder.embed_tokens.weight
+2024-01-07 07:19:46 | INFO | fairseq.trainer | detected shared parameter: encoder.embed_tokens.weight <- decoder.output_projection.weight
+2024-01-07 07:19:46 | INFO | fairseq.utils | ***********************CUDA enviroments for all 1 workers***********************
+2024-01-07 07:19:46 | INFO | fairseq.utils | rank   0: capabilities =  8.6  ; total memory = 23.700 GB ; name = NVIDIA GeForce RTX 3090                 
+2024-01-07 07:19:46 | INFO | fairseq.utils | ***********************CUDA enviroments for all 1 workers***********************
+2024-01-07 07:19:46 | INFO | fairseq_cli.train | training on 1 devices (GPUs/TPUs)
+2024-01-07 07:19:46 | INFO | fairseq_cli.train | max tokens per device = 1024 and max sentences per device = None
+2024-01-07 07:19:46 | INFO | fairseq.trainer | Preparing to load checkpoint /home2/chu/fairseq_sign/sign/pretrained_models/mbart.cc25.v2/model.pt
+2024-01-07 07:20:19 | INFO | fairseq.trainer | NOTE: your device may support faster training with --fp16 or --amp
+2024-01-07 07:20:19 | INFO | fairseq.trainer | Loaded checkpoint /home2/chu/fairseq_sign/sign/pretrained_models/mbart.cc25.v2/model.pt (epoch 142 @ 0 updates)
+2024-01-07 07:20:19 | INFO | fairseq.trainer | loading train data for epoch 1
+2024-01-07 07:20:19 | INFO | fairseq.data.data_utils | loaded 100,830 examples from: /home2/chu/fairseq_sign/sign/dataset/sp-10/index/de-en/add_short_mt_mbart_index/train.de_DE-en_XX.de_DE
+2024-01-07 07:20:19 | INFO | fairseq.data.data_utils | loaded 100,830 examples from: /home2/chu/fairseq_sign/sign/dataset/sp-10/index/de-en/add_short_mt_mbart_index/train.de_DE-en_XX.en_XX
+2024-01-07 07:20:19 | INFO | fairseq.tasks.translation | /home2/chu/fairseq_sign/sign/dataset/sp-10/index/de-en/add_short_mt_mbart_index train de_DE-en_XX 100830 examples
+2024-01-07 07:20:19 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 07:20:19 | INFO | fairseq.tasks.fairseq_task | reuse_dataloader = True
+2024-01-07 07:20:19 | INFO | fairseq.tasks.fairseq_task | rebuild_batches = False
+2024-01-07 07:20:19 | INFO | fairseq.tasks.fairseq_task | creating new batches for epoch 1
+2024-01-07 07:20:19 | INFO | fairseq_cli.train | begin dry-run validation on "valid" subset
+2024-01-07 07:20:19 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 07:20:19 | INFO | fairseq.tasks.fairseq_task | reuse_dataloader = True
+2024-01-07 07:20:19 | INFO | fairseq.tasks.fairseq_task | rebuild_batches = False
+2024-01-07 07:20:19 | INFO | fairseq.tasks.fairseq_task | creating new batches for epoch 1
+2024-01-07 07:20:20 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 07:20:20 | INFO | fairseq.trainer | begin training epoch 1
+2024-01-07 07:20:20 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 07:21:19 | INFO | train_inner | epoch 001:    100 / 907 loss=31.485, nll_loss=13.463, ppl=11291.1, wps=3188.1, ups=1.89, wpb=1691.3, bsz=110.2, num_updates=100, lr=1.2e-06, gnorm=407.7, train_wall=59, gb_free=10.9, wall=93
+2024-01-07 07:22:13 | INFO | train_inner | epoch 001:    200 / 907 loss=15.314, nll_loss=10.621, ppl=1574.81, wps=3128.3, ups=1.88, wpb=1668, bsz=112.3, num_updates=200, lr=2.4e-06, gnorm=60.622, train_wall=53, gb_free=10.9, wall=146
+2024-01-07 07:23:07 | INFO | train_inner | epoch 001:    300 / 907 loss=12.939, nll_loss=8.284, ppl=311.7, wps=3153.8, ups=1.84, wpb=1712.2, bsz=115.4, num_updates=300, lr=3.6e-06, gnorm=29.265, train_wall=54, gb_free=10.2, wall=200
+2024-01-07 07:24:01 | INFO | train_inner | epoch 001:    400 / 907 loss=11.398, nll_loss=6.795, ppl=111.07, wps=3090.8, ups=1.86, wpb=1662.2, bsz=111.7, num_updates=400, lr=4.8e-06, gnorm=18.593, train_wall=53, gb_free=10.1, wall=254
+2024-01-07 07:24:55 | INFO | train_inner | epoch 001:    500 / 907 loss=10.183, nll_loss=5.653, ppl=50.32, wps=3103.2, ups=1.85, wpb=1676.2, bsz=110, num_updates=500, lr=6e-06, gnorm=10.533, train_wall=54, gb_free=11, wall=308
+2024-01-07 07:25:49 | INFO | train_inner | epoch 001:    600 / 907 loss=9.345, nll_loss=4.879, ppl=29.42, wps=3138.1, ups=1.83, wpb=1715.8, bsz=111.4, num_updates=600, lr=7.2e-06, gnorm=8.853, train_wall=54, gb_free=10.1, wall=363
+2024-01-07 07:26:44 | INFO | train_inner | epoch 001:    700 / 907 loss=8.857, nll_loss=4.46, ppl=22.01, wps=3096.9, ups=1.85, wpb=1678.2, bsz=110.4, num_updates=700, lr=8.4e-06, gnorm=6.188, train_wall=54, gb_free=11, wall=417
+2024-01-07 07:27:38 | INFO | train_inner | epoch 001:    800 / 907 loss=8.413, nll_loss=4.104, ppl=17.19, wps=3077.2, ups=1.84, wpb=1671.1, bsz=108.6, num_updates=800, lr=9.6e-06, gnorm=6.942, train_wall=54, gb_free=9.8, wall=471
+2024-01-07 07:28:32 | INFO | train_inner | epoch 001:    900 / 907 loss=8.057, nll_loss=3.861, ppl=14.53, wps=3081.8, ups=1.84, wpb=1676.7, bsz=109.2, num_updates=900, lr=1.08e-05, gnorm=5.596, train_wall=54, gb_free=10.7, wall=526
+2024-01-07 07:28:36 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 1 @ 907 updates
+2024-01-07 07:28:36 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 07:28:55 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 07:28:55 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt (epoch 1 @ 907 updates, score None) (writing took 19.245964019035455 seconds)
+2024-01-07 07:28:55 | INFO | fairseq_cli.train | end of epoch 1 (average epoch stats below)
+2024-01-07 07:28:55 | INFO | train | epoch 001 | loss 12.858 | nll_loss 6.879 | ppl 117.72 | wps 3000.3 | ups 1.78 | wpb 1683.8 | bsz 111.2 | num_updates 907 | lr 1.0884e-05 | gnorm 61.158 | train_wall 493 | gb_free 12.5 | wall 549
+2024-01-07 07:28:55 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 07:28:55 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 07:28:55 | INFO | fairseq.trainer | begin training epoch 2
+2024-01-07 07:28:55 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 07:29:45 | INFO | train_inner | epoch 002:     93 / 907 loss=7.757, nll_loss=3.64, ppl=12.47, wps=2298.7, ups=1.37, wpb=1674.9, bsz=113, num_updates=1000, lr=1.2e-05, gnorm=5.882, train_wall=53, gb_free=10.5, wall=599
+2024-01-07 07:30:39 | INFO | train_inner | epoch 002:    193 / 907 loss=7.543, nll_loss=3.479, ppl=11.15, wps=3136.2, ups=1.84, wpb=1701.2, bsz=115.4, num_updates=1100, lr=1.32e-05, gnorm=6.406, train_wall=54, gb_free=10.3, wall=653
+2024-01-07 07:31:34 | INFO | train_inner | epoch 002:    293 / 907 loss=7.382, nll_loss=3.376, ppl=10.38, wps=3135.5, ups=1.84, wpb=1706.1, bsz=113.2, num_updates=1200, lr=1.44e-05, gnorm=6.075, train_wall=54, gb_free=10.4, wall=707
+2024-01-07 07:32:28 | INFO | train_inner | epoch 002:    393 / 907 loss=7.227, nll_loss=3.277, ppl=9.7, wps=3113.5, ups=1.84, wpb=1688.7, bsz=109.3, num_updates=1300, lr=1.56e-05, gnorm=5.52, train_wall=54, gb_free=10.1, wall=762
+2024-01-07 07:33:22 | INFO | train_inner | epoch 002:    493 / 907 loss=7.123, nll_loss=3.219, ppl=9.31, wps=3132.9, ups=1.83, wpb=1707.8, bsz=111.3, num_updates=1400, lr=1.68e-05, gnorm=5.856, train_wall=54, gb_free=10.4, wall=816
+2024-01-07 07:34:16 | INFO | train_inner | epoch 002:    593 / 907 loss=7.032, nll_loss=3.17, ppl=9, wps=3118.6, ups=1.86, wpb=1673.8, bsz=106.6, num_updates=1500, lr=1.8e-05, gnorm=5.102, train_wall=53, gb_free=10.4, wall=870
+2024-01-07 07:35:10 | INFO | train_inner | epoch 002:    693 / 907 loss=6.945, nll_loss=3.111, ppl=8.64, wps=3126, ups=1.85, wpb=1689.8, bsz=107.4, num_updates=1600, lr=1.92e-05, gnorm=4.622, train_wall=54, gb_free=10.3, wall=924
+2024-01-07 07:36:04 | INFO | train_inner | epoch 002:    793 / 907 loss=6.842, nll_loss=3.013, ppl=8.07, wps=3102, ups=1.87, wpb=1661.7, bsz=114.4, num_updates=1700, lr=2.04e-05, gnorm=5.051, train_wall=53, gb_free=10.3, wall=977
+2024-01-07 07:36:57 | INFO | train_inner | epoch 002:    893 / 907 loss=6.758, nll_loss=2.938, ppl=7.67, wps=3111, ups=1.86, wpb=1668.2, bsz=112.4, num_updates=1800, lr=2.16e-05, gnorm=5.198, train_wall=53, gb_free=10.8, wall=1031
+2024-01-07 07:37:05 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 2 @ 1814 updates
+2024-01-07 07:37:05 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 07:37:30 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 07:37:30 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt (epoch 2 @ 1814 updates, score None) (writing took 25.641189329035114 seconds)
+2024-01-07 07:37:30 | INFO | fairseq_cli.train | end of epoch 2 (average epoch stats below)
+2024-01-07 07:37:30 | INFO | train | epoch 002 | loss 7.17 | nll_loss 3.242 | ppl 9.46 | wps 2965.2 | ups 1.76 | wpb 1683.8 | bsz 111.2 | num_updates 1814 | lr 2.1768e-05 | gnorm 5.519 | train_wall 486 | gb_free 12.6 | wall 1064
+2024-01-07 07:37:30 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 07:37:30 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 07:37:30 | INFO | fairseq.trainer | begin training epoch 3
+2024-01-07 07:37:30 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 07:38:16 | INFO | train_inner | epoch 003:     86 / 907 loss=6.709, nll_loss=2.904, ppl=7.49, wps=2112.5, ups=1.27, wpb=1660.5, bsz=111.1, num_updates=1900, lr=2.28e-05, gnorm=5.266, train_wall=53, gb_free=11, wall=1110
+2024-01-07 07:39:10 | INFO | train_inner | epoch 003:    186 / 907 loss=6.65, nll_loss=2.847, ppl=7.19, wps=3112.5, ups=1.87, wpb=1667.9, bsz=106.7, num_updates=2000, lr=2.4e-05, gnorm=4.535, train_wall=53, gb_free=10, wall=1163
+2024-01-07 07:40:03 | INFO | train_inner | epoch 003:    286 / 907 loss=6.585, nll_loss=2.782, ppl=6.88, wps=3111.9, ups=1.86, wpb=1671.4, bsz=109.4, num_updates=2100, lr=2.52e-05, gnorm=4.265, train_wall=53, gb_free=9.9, wall=1217
+2024-01-07 07:40:57 | INFO | train_inner | epoch 003:    386 / 907 loss=6.562, nll_loss=2.767, ppl=6.81, wps=3124.4, ups=1.85, wpb=1692.1, bsz=114, num_updates=2200, lr=2.64e-05, gnorm=3.572, train_wall=54, gb_free=9.8, wall=1271
+2024-01-07 07:41:52 | INFO | train_inner | epoch 003:    486 / 907 loss=6.539, nll_loss=2.756, ppl=6.76, wps=3140.3, ups=1.85, wpb=1700.2, bsz=115, num_updates=2300, lr=2.76e-05, gnorm=4.406, train_wall=54, gb_free=10.4, wall=1325
+2024-01-07 07:42:46 | INFO | train_inner | epoch 003:    586 / 907 loss=6.476, nll_loss=2.686, ppl=6.44, wps=3145.5, ups=1.84, wpb=1707.2, bsz=111.9, num_updates=2400, lr=2.88e-05, gnorm=3.628, train_wall=54, gb_free=10.8, wall=1379
+2024-01-07 07:43:40 | INFO | train_inner | epoch 003:    686 / 907 loss=6.44, nll_loss=2.653, ppl=6.29, wps=3064.9, ups=1.85, wpb=1652.3, bsz=108.8, num_updates=2500, lr=3e-05, gnorm=3.61, train_wall=53, gb_free=11, wall=1433
+2024-01-07 07:44:34 | INFO | train_inner | epoch 003:    786 / 907 loss=6.439, nll_loss=2.664, ppl=6.34, wps=3114.2, ups=1.84, wpb=1689.9, bsz=110.2, num_updates=2600, lr=2.992e-05, gnorm=2.923, train_wall=54, gb_free=10.5, wall=1488
+2024-01-07 07:45:28 | INFO | train_inner | epoch 003:    886 / 907 loss=6.439, nll_loss=2.675, ppl=6.38, wps=3121.6, ups=1.84, wpb=1693.7, bsz=111.6, num_updates=2700, lr=2.984e-05, gnorm=11.28, train_wall=54, gb_free=10.4, wall=1542
+2024-01-07 07:45:40 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 3 @ 2721 updates
+2024-01-07 07:45:40 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 07:46:06 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 07:46:06 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt (epoch 3 @ 2721 updates, score None) (writing took 26.879505304037593 seconds)
+2024-01-07 07:46:06 | INFO | fairseq_cli.train | end of epoch 3 (average epoch stats below)
+2024-01-07 07:46:06 | INFO | train | epoch 003 | loss 6.529 | nll_loss 2.74 | ppl 6.68 | wps 2958.5 | ups 1.76 | wpb 1683.8 | bsz 111.2 | num_updates 2721 | lr 2.98232e-05 | gnorm 4.769 | train_wall 486 | gb_free 12.6 | wall 1580
+2024-01-07 07:46:06 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 07:46:06 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 07:46:06 | INFO | fairseq.trainer | begin training epoch 4
+2024-01-07 07:46:06 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 07:46:49 | INFO | train_inner | epoch 004:     79 / 907 loss=6.328, nll_loss=2.537, ppl=5.8, wps=2098.2, ups=1.24, wpb=1696.8, bsz=111.7, num_updates=2800, lr=2.976e-05, gnorm=2.8, train_wall=54, gb_free=9.9, wall=1623
+2024-01-07 07:47:43 | INFO | train_inner | epoch 004:    179 / 907 loss=6.292, nll_loss=2.499, ppl=5.65, wps=3080.1, ups=1.87, wpb=1649.9, bsz=111.5, num_updates=2900, lr=2.968e-05, gnorm=8.183, train_wall=53, gb_free=10.3, wall=1676
+2024-01-07 07:48:37 | INFO | train_inner | epoch 004:    279 / 907 loss=6.285, nll_loss=2.498, ppl=5.65, wps=3074.8, ups=1.86, wpb=1653.4, bsz=102.5, num_updates=3000, lr=2.96e-05, gnorm=2.696, train_wall=53, gb_free=10.4, wall=1730
+2024-01-07 07:49:31 | INFO | train_inner | epoch 004:    379 / 907 loss=6.248, nll_loss=2.46, ppl=5.5, wps=3127.5, ups=1.83, wpb=1708.9, bsz=111, num_updates=3100, lr=2.952e-05, gnorm=2.664, train_wall=54, gb_free=10.6, wall=1785
+2024-01-07 07:50:25 | INFO | train_inner | epoch 004:    479 / 907 loss=6.217, nll_loss=2.428, ppl=5.38, wps=3105.5, ups=1.85, wpb=1681.3, bsz=114.2, num_updates=3200, lr=2.944e-05, gnorm=2.335, train_wall=54, gb_free=10.8, wall=1839
+2024-01-07 07:51:20 | INFO | train_inner | epoch 004:    579 / 907 loss=6.27, nll_loss=2.499, ppl=5.65, wps=3139.2, ups=1.84, wpb=1709.2, bsz=116.3, num_updates=3300, lr=2.936e-05, gnorm=3.508, train_wall=54, gb_free=10.1, wall=1893
+2024-01-07 07:52:14 | INFO | train_inner | epoch 004:    679 / 907 loss=6.208, nll_loss=2.426, ppl=5.37, wps=3088.7, ups=1.84, wpb=1677.2, bsz=113.6, num_updates=3400, lr=2.928e-05, gnorm=2.882, train_wall=54, gb_free=10, wall=1948
+2024-01-07 07:53:08 | INFO | train_inner | epoch 004:    779 / 907 loss=6.198, nll_loss=2.419, ppl=5.35, wps=3136, ups=1.84, wpb=1700.3, bsz=111.3, num_updates=3500, lr=2.92e-05, gnorm=2.309, train_wall=54, gb_free=10.5, wall=2002
+2024-01-07 07:54:02 | INFO | train_inner | epoch 004:    879 / 907 loss=6.192, nll_loss=2.416, ppl=5.34, wps=3120.2, ups=1.86, wpb=1680.8, bsz=110.2, num_updates=3600, lr=2.912e-05, gnorm=2.41, train_wall=54, gb_free=10.6, wall=2056
+2024-01-07 07:54:17 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 4 @ 3628 updates
+2024-01-07 07:54:17 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 07:54:44 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 07:54:44 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt (epoch 4 @ 3628 updates, score None) (writing took 26.692327537981328 seconds)
+2024-01-07 07:54:44 | INFO | fairseq_cli.train | end of epoch 4 (average epoch stats below)
+2024-01-07 07:54:44 | INFO | train | epoch 004 | loss 6.243 | nll_loss 2.459 | ppl 5.5 | wps 2951.5 | ups 1.75 | wpb 1683.8 | bsz 111.2 | num_updates 3628 | lr 2.90976e-05 | gnorm 3.298 | train_wall 488 | gb_free 12.4 | wall 2097
+2024-01-07 07:54:44 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 07:54:44 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 07:54:44 | INFO | fairseq.trainer | begin training epoch 5
+2024-01-07 07:54:44 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 07:55:23 | INFO | train_inner | epoch 005:     72 / 907 loss=6.112, nll_loss=2.318, ppl=4.99, wps=2118.2, ups=1.24, wpb=1705.9, bsz=114.1, num_updates=3700, lr=2.904e-05, gnorm=2.204, train_wall=53, gb_free=11, wall=2136
+2024-01-07 07:56:16 | INFO | train_inner | epoch 005:    172 / 907 loss=6.058, nll_loss=2.254, ppl=4.77, wps=3120.5, ups=1.87, wpb=1667.9, bsz=117.7, num_updates=3800, lr=2.896e-05, gnorm=2.221, train_wall=53, gb_free=10.9, wall=2190
+2024-01-07 07:57:10 | INFO | train_inner | epoch 005:    272 / 907 loss=6.095, nll_loss=2.305, ppl=4.94, wps=3105.5, ups=1.86, wpb=1668.4, bsz=106.7, num_updates=3900, lr=2.888e-05, gnorm=2.154, train_wall=53, gb_free=10.1, wall=2243
+2024-01-07 07:58:04 | INFO | train_inner | epoch 005:    372 / 907 loss=6.073, nll_loss=2.279, ppl=4.85, wps=3169.6, ups=1.85, wpb=1713, bsz=109.4, num_updates=4000, lr=2.88e-05, gnorm=2.057, train_wall=54, gb_free=10.4, wall=2297
+2024-01-07 07:58:57 | INFO | train_inner | epoch 005:    472 / 907 loss=6.082, nll_loss=2.297, ppl=4.91, wps=3121.5, ups=1.87, wpb=1672.3, bsz=110.2, num_updates=4100, lr=2.872e-05, gnorm=2.102, train_wall=53, gb_free=10.5, wall=2351
+2024-01-07 07:59:51 | INFO | train_inner | epoch 005:    572 / 907 loss=6.049, nll_loss=2.258, ppl=4.78, wps=3112.2, ups=1.87, wpb=1664.9, bsz=109.4, num_updates=4200, lr=2.864e-05, gnorm=2.148, train_wall=53, gb_free=10.7, wall=2405
+2024-01-07 08:00:45 | INFO | train_inner | epoch 005:    672 / 907 loss=6.03, nll_loss=2.239, ppl=4.72, wps=3158.7, ups=1.84, wpb=1716.7, bsz=114.2, num_updates=4300, lr=2.856e-05, gnorm=2.074, train_wall=54, gb_free=10, wall=2459
+2024-01-07 08:01:39 | INFO | train_inner | epoch 005:    772 / 907 loss=6.036, nll_loss=2.247, ppl=4.75, wps=3138.5, ups=1.86, wpb=1691.1, bsz=109.8, num_updates=4400, lr=2.848e-05, gnorm=2.092, train_wall=54, gb_free=10.7, wall=2513
+2024-01-07 08:02:33 | INFO | train_inner | epoch 005:    872 / 907 loss=6.018, nll_loss=2.228, ppl=4.69, wps=3088.2, ups=1.85, wpb=1665.9, bsz=110.1, num_updates=4500, lr=2.84e-05, gnorm=1.987, train_wall=54, gb_free=10.4, wall=2567
+2024-01-07 08:02:52 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 5 @ 4535 updates
+2024-01-07 08:02:52 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 08:03:28 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt
+2024-01-07 08:03:28 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_last.pt (epoch 5 @ 4535 updates, score None) (writing took 36.55682007095311 seconds)
+2024-01-07 08:03:28 | INFO | fairseq_cli.train | end of epoch 5 (average epoch stats below)
+2024-01-07 08:03:29 | INFO | train | epoch 005 | loss 6.057 | nll_loss 2.265 | ppl 4.81 | wps 2908 | ups 1.73 | wpb 1683.8 | bsz 111.2 | num_updates 4535 | lr 2.8372e-05 | gnorm 2.117 | train_wall 485 | gb_free 12.7 | wall 2623
+2024-01-07 08:03:29 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:03:31 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 08:03:31 | INFO | fairseq.trainer | begin training epoch 6
+2024-01-07 08:03:31 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 08:04:07 | INFO | train_inner | epoch 006:     65 / 907 loss=5.996, nll_loss=2.2, ppl=4.6, wps=1792.4, ups=1.06, wpb=1686.8, bsz=106.8, num_updates=4600, lr=2.832e-05, gnorm=2.035, train_wall=54, gb_free=9.9, wall=2661
+2024-01-07 08:05:01 | INFO | train_inner | epoch 006:    165 / 907 loss=5.95, nll_loss=2.146, ppl=4.42, wps=3151.2, ups=1.85, wpb=1702.1, bsz=112.2, num_updates=4700, lr=2.824e-05, gnorm=2.073, train_wall=54, gb_free=11, wall=2715
+2024-01-07 08:05:56 | INFO | train_inner | epoch 006:    265 / 907 loss=5.946, nll_loss=2.137, ppl=4.4, wps=3126.3, ups=1.84, wpb=1699.2, bsz=110.7, num_updates=4800, lr=2.816e-05, gnorm=2.471, train_wall=54, gb_free=10.3, wall=2769
+2024-01-07 08:06:50 | INFO | train_inner | epoch 006:    365 / 907 loss=5.942, nll_loss=2.139, ppl=4.41, wps=3093, ups=1.85, wpb=1669.6, bsz=111, num_updates=4900, lr=2.808e-05, gnorm=2.133, train_wall=54, gb_free=11, wall=2823
+2024-01-07 08:07:43 | INFO | train_inner | epoch 006:    465 / 907 loss=5.944, nll_loss=2.143, ppl=4.42, wps=3043.2, ups=1.86, wpb=1634, bsz=103, num_updates=5000, lr=2.8e-05, gnorm=2.375, train_wall=53, gb_free=10.8, wall=2877
+2024-01-07 08:08:38 | INFO | train_inner | epoch 006:    565 / 907 loss=5.935, nll_loss=2.134, ppl=4.39, wps=3092, ups=1.84, wpb=1682.9, bsz=109.4, num_updates=5100, lr=2.792e-05, gnorm=1.998, train_wall=54, gb_free=10, wall=2931
+2024-01-07 08:09:32 | INFO | train_inner | epoch 006:    665 / 907 loss=5.921, nll_loss=2.12, ppl=4.35, wps=3099.5, ups=1.83, wpb=1690, bsz=109.4, num_updates=5200, lr=2.784e-05, gnorm=1.792, train_wall=54, gb_free=10.5, wall=2986
+2024-01-07 08:10:26 | INFO | train_inner | epoch 006:    765 / 907 loss=5.929, nll_loss=2.135, ppl=4.39, wps=3115.3, ups=1.85, wpb=1680.2, bsz=112.4, num_updates=5300, lr=2.776e-05, gnorm=1.891, train_wall=54, gb_free=10.2, wall=3040
+2024-01-07 08:11:21 | INFO | train_inner | epoch 006:    865 / 907 loss=5.863, nll_loss=2.056, ppl=4.16, wps=3132.6, ups=1.84, wpb=1705, bsz=121.2, num_updates=5400, lr=2.768e-05, gnorm=1.843, train_wall=54, gb_free=10.1, wall=3094
+2024-01-07 08:11:43 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 08:11:43 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:11:44 | INFO | valid | epoch 006 | valid on 'valid' subset | loss 5.732 | nll_loss 1.864 | ppl 3.64 | wps 4094.8 | wpb 574.5 | bsz 68 | num_updates 5442
+2024-01-07 08:11:44 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 6 @ 5442 updates
+2024-01-07 08:11:44 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:12:15 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:14:33 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 6 @ 5442 updates, score 5.732) (writing took 169.636659411015 seconds)
+2024-01-07 08:14:33 | INFO | fairseq_cli.train | end of epoch 6 (average epoch stats below)
+2024-01-07 08:14:34 | INFO | train | epoch 006 | loss 5.93 | nll_loss 2.128 | ppl 4.37 | wps 2297.1 | ups 1.36 | wpb 1683.8 | bsz 111.2 | num_updates 5442 | lr 2.76464e-05 | gnorm 2.056 | train_wall 488 | gb_free 12.5 | wall 3288
+2024-01-07 08:14:34 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:14:34 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 08:14:34 | INFO | fairseq.trainer | begin training epoch 7
+2024-01-07 08:14:34 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 08:15:07 | INFO | train_inner | epoch 007:     58 / 907 loss=5.869, nll_loss=2.058, ppl=4.16, wps=742.6, ups=0.44, wpb=1679.5, bsz=113.1, num_updates=5500, lr=2.76e-05, gnorm=1.969, train_wall=54, gb_free=10.8, wall=3320
+2024-01-07 08:16:00 | INFO | train_inner | epoch 007:    158 / 907 loss=5.85, nll_loss=2.034, ppl=4.1, wps=3153.2, ups=1.89, wpb=1668.5, bsz=105.5, num_updates=5600, lr=2.752e-05, gnorm=1.944, train_wall=53, gb_free=11, wall=3373
+2024-01-07 08:16:53 | INFO | train_inner | epoch 007:    258 / 907 loss=5.839, nll_loss=2.024, ppl=4.07, wps=3142.1, ups=1.87, wpb=1682.4, bsz=113.7, num_updates=5700, lr=2.744e-05, gnorm=2.075, train_wall=53, gb_free=10.5, wall=3427
+2024-01-07 08:17:47 | INFO | train_inner | epoch 007:    358 / 907 loss=5.833, nll_loss=2.019, ppl=4.05, wps=3127, ups=1.86, wpb=1684.6, bsz=112.1, num_updates=5800, lr=2.736e-05, gnorm=1.786, train_wall=54, gb_free=10.7, wall=3481
+2024-01-07 08:18:41 | INFO | train_inner | epoch 007:    458 / 907 loss=5.833, nll_loss=2.023, ppl=4.06, wps=3114.5, ups=1.86, wpb=1673.6, bsz=111.6, num_updates=5900, lr=2.728e-05, gnorm=1.795, train_wall=53, gb_free=9.9, wall=3534
+2024-01-07 08:19:35 | INFO | train_inner | epoch 007:    558 / 907 loss=5.841, nll_loss=2.033, ppl=4.09, wps=3120.1, ups=1.86, wpb=1674.4, bsz=109.7, num_updates=6000, lr=2.72e-05, gnorm=1.877, train_wall=53, gb_free=11, wall=3588
+2024-01-07 08:20:29 | INFO | train_inner | epoch 007:    658 / 907 loss=5.845, nll_loss=2.041, ppl=4.11, wps=3118.2, ups=1.85, wpb=1686.3, bsz=113.1, num_updates=6100, lr=2.712e-05, gnorm=2.212, train_wall=54, gb_free=10.4, wall=3642
+2024-01-07 08:21:27 | INFO | train_inner | epoch 007:    758 / 907 loss=5.846, nll_loss=2.043, ppl=4.12, wps=2920.4, ups=1.73, wpb=1691.9, bsz=105.4, num_updates=6200, lr=2.704e-05, gnorm=1.778, train_wall=57, gb_free=10.9, wall=3700
+2024-01-07 08:22:21 | INFO | train_inner | epoch 007:    858 / 907 loss=5.808, nll_loss=1.998, ppl=3.99, wps=3127.6, ups=1.85, wpb=1691.5, bsz=113.3, num_updates=6300, lr=2.696e-05, gnorm=1.707, train_wall=54, gb_free=10.5, wall=3754
+2024-01-07 08:22:47 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 08:22:47 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:22:47 | INFO | valid | epoch 007 | valid on 'valid' subset | loss 5.659 | nll_loss 1.816 | ppl 3.52 | wps 4161.3 | wpb 574.5 | bsz 68 | num_updates 6349 | best_loss 5.659
+2024-01-07 08:22:47 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 7 @ 6349 updates
+2024-01-07 08:22:47 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:23:18 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:24:30 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 7 @ 6349 updates, score 5.659) (writing took 102.80480842397083 seconds)
+2024-01-07 08:24:30 | INFO | fairseq_cli.train | end of epoch 7 (average epoch stats below)
+2024-01-07 08:24:30 | INFO | train | epoch 007 | loss 5.832 | nll_loss 2.02 | ppl 4.06 | wps 2561.4 | ups 1.52 | wpb 1683.8 | bsz 111.2 | num_updates 6349 | lr 2.69208e-05 | gnorm 1.885 | train_wall 489 | gb_free 12.5 | wall 3884
+2024-01-07 08:24:30 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:24:30 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 08:24:30 | INFO | fairseq.trainer | begin training epoch 8
+2024-01-07 08:24:30 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 08:24:58 | INFO | train_inner | epoch 008:     51 / 907 loss=5.738, nll_loss=1.912, ppl=3.76, wps=1076.1, ups=0.63, wpb=1696.4, bsz=114, num_updates=6400, lr=2.688e-05, gnorm=1.716, train_wall=54, gb_free=9.8, wall=3912
+2024-01-07 08:25:52 | INFO | train_inner | epoch 008:    151 / 907 loss=5.773, nll_loss=1.951, ppl=3.87, wps=3158.9, ups=1.87, wpb=1689, bsz=110.7, num_updates=6500, lr=2.68e-05, gnorm=1.903, train_wall=53, gb_free=9.8, wall=3965
+2024-01-07 08:26:46 | INFO | train_inner | epoch 008:    251 / 907 loss=5.76, nll_loss=1.938, ppl=3.83, wps=3116.1, ups=1.85, wpb=1682, bsz=109.7, num_updates=6600, lr=2.672e-05, gnorm=1.784, train_wall=54, gb_free=11, wall=4019
+2024-01-07 08:27:40 | INFO | train_inner | epoch 008:    351 / 907 loss=5.759, nll_loss=1.94, ppl=3.84, wps=3092, ups=1.85, wpb=1671.1, bsz=114.6, num_updates=6700, lr=2.664e-05, gnorm=1.733, train_wall=54, gb_free=10.3, wall=4073
+2024-01-07 08:28:34 | INFO | train_inner | epoch 008:    451 / 907 loss=5.765, nll_loss=1.947, ppl=3.86, wps=3107.9, ups=1.84, wpb=1692.8, bsz=109.2, num_updates=6800, lr=2.656e-05, gnorm=1.799, train_wall=54, gb_free=10.5, wall=4128
+2024-01-07 08:29:28 | INFO | train_inner | epoch 008:    551 / 907 loss=5.756, nll_loss=1.937, ppl=3.83, wps=3125.2, ups=1.84, wpb=1694.5, bsz=109.8, num_updates=6900, lr=2.648e-05, gnorm=1.671, train_wall=54, gb_free=10.9, wall=4182
+2024-01-07 08:30:23 | INFO | train_inner | epoch 008:    651 / 907 loss=5.725, nll_loss=1.903, ppl=3.74, wps=3129.4, ups=1.84, wpb=1701.9, bsz=116.3, num_updates=7000, lr=2.64e-05, gnorm=1.646, train_wall=54, gb_free=10, wall=4236
+2024-01-07 08:31:16 | INFO | train_inner | epoch 008:    751 / 907 loss=5.772, nll_loss=1.962, ppl=3.9, wps=3093.2, ups=1.86, wpb=1659.6, bsz=109, num_updates=7100, lr=2.632e-05, gnorm=1.832, train_wall=53, gb_free=10.9, wall=4290
+2024-01-07 08:32:10 | INFO | train_inner | epoch 008:    851 / 907 loss=5.756, nll_loss=1.944, ppl=3.85, wps=3137.1, ups=1.86, wpb=1688.1, bsz=111.3, num_updates=7200, lr=2.624e-05, gnorm=1.707, train_wall=53, gb_free=10.4, wall=4344
+2024-01-07 08:32:40 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 08:32:40 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:32:41 | INFO | valid | epoch 008 | valid on 'valid' subset | loss 5.611 | nll_loss 1.718 | ppl 3.29 | wps 4124.7 | wpb 574.5 | bsz 68 | num_updates 7256 | best_loss 5.611
+2024-01-07 08:32:41 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 8 @ 7256 updates
+2024-01-07 08:32:41 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:33:08 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:34:01 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 8 @ 7256 updates, score 5.611) (writing took 80.78801003500121 seconds)
+2024-01-07 08:34:01 | INFO | fairseq_cli.train | end of epoch 8 (average epoch stats below)
+2024-01-07 08:34:01 | INFO | train | epoch 008 | loss 5.756 | nll_loss 1.937 | ppl 3.83 | wps 2674 | ups 1.59 | wpb 1683.8 | bsz 111.2 | num_updates 7256 | lr 2.61952e-05 | gnorm 1.765 | train_wall 487 | gb_free 12.4 | wall 4455
+2024-01-07 08:34:01 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:34:01 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 08:34:01 | INFO | fairseq.trainer | begin training epoch 9
+2024-01-07 08:34:01 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 08:34:25 | INFO | train_inner | epoch 009:     44 / 907 loss=5.703, nll_loss=1.877, ppl=3.67, wps=1256.7, ups=0.74, wpb=1690.2, bsz=111.4, num_updates=7300, lr=2.616e-05, gnorm=1.755, train_wall=53, gb_free=10.3, wall=4478
+2024-01-07 08:35:18 | INFO | train_inner | epoch 009:    144 / 907 loss=5.688, nll_loss=1.855, ppl=3.62, wps=3127.8, ups=1.88, wpb=1665.3, bsz=109.6, num_updates=7400, lr=2.608e-05, gnorm=1.616, train_wall=53, gb_free=10.2, wall=4532
+2024-01-07 08:36:12 | INFO | train_inner | epoch 009:    244 / 907 loss=5.682, nll_loss=1.85, ppl=3.61, wps=3117.8, ups=1.87, wpb=1668.2, bsz=111.7, num_updates=7500, lr=2.6e-05, gnorm=1.668, train_wall=53, gb_free=10.3, wall=4585
+2024-01-07 08:37:06 | INFO | train_inner | epoch 009:    344 / 907 loss=5.704, nll_loss=1.876, ppl=3.67, wps=3125.6, ups=1.85, wpb=1687.4, bsz=105.6, num_updates=7600, lr=2.592e-05, gnorm=1.636, train_wall=54, gb_free=10.1, wall=4639
+2024-01-07 08:38:00 | INFO | train_inner | epoch 009:    444 / 907 loss=5.676, nll_loss=1.847, ppl=3.6, wps=3120.8, ups=1.85, wpb=1686, bsz=113.2, num_updates=7700, lr=2.584e-05, gnorm=1.847, train_wall=54, gb_free=10.1, wall=4693
+2024-01-07 08:38:53 | INFO | train_inner | epoch 009:    544 / 907 loss=5.685, nll_loss=1.857, ppl=3.62, wps=3124.2, ups=1.86, wpb=1678, bsz=111.5, num_updates=7800, lr=2.576e-05, gnorm=1.633, train_wall=53, gb_free=10.2, wall=4747
+2024-01-07 08:39:47 | INFO | train_inner | epoch 009:    644 / 907 loss=5.684, nll_loss=1.86, ppl=3.63, wps=3146.4, ups=1.85, wpb=1700, bsz=117.2, num_updates=7900, lr=2.568e-05, gnorm=1.629, train_wall=54, gb_free=10.1, wall=4801
+2024-01-07 08:40:41 | INFO | train_inner | epoch 009:    744 / 907 loss=5.693, nll_loss=1.871, ppl=3.66, wps=3139.7, ups=1.85, wpb=1695.3, bsz=116.9, num_updates=8000, lr=2.56e-05, gnorm=1.582, train_wall=54, gb_free=10.4, wall=4855
+2024-01-07 08:41:35 | INFO | train_inner | epoch 009:    844 / 907 loss=5.711, nll_loss=1.892, ppl=3.71, wps=3106.6, ups=1.86, wpb=1674.3, bsz=105.3, num_updates=8100, lr=2.552e-05, gnorm=1.843, train_wall=54, gb_free=10.7, wall=4909
+2024-01-07 08:42:09 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 08:42:09 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:42:10 | INFO | valid | epoch 009 | valid on 'valid' subset | loss 5.594 | nll_loss 1.707 | ppl 3.26 | wps 4110.8 | wpb 574.5 | bsz 68 | num_updates 8163 | best_loss 5.594
+2024-01-07 08:42:10 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 9 @ 8163 updates
+2024-01-07 08:42:10 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:42:36 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:43:27 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 9 @ 8163 updates, score 5.594) (writing took 77.54504863801412 seconds)
+2024-01-07 08:43:27 | INFO | fairseq_cli.train | end of epoch 9 (average epoch stats below)
+2024-01-07 08:43:27 | INFO | train | epoch 009 | loss 5.692 | nll_loss 1.865 | ppl 3.64 | wps 2698.8 | ups 1.6 | wpb 1683.8 | bsz 111.2 | num_updates 8163 | lr 2.54696e-05 | gnorm 1.725 | train_wall 485 | gb_free 12.4 | wall 5021
+2024-01-07 08:43:27 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:43:27 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 08:43:27 | INFO | fairseq.trainer | begin training epoch 10
+2024-01-07 08:43:27 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 08:43:47 | INFO | train_inner | epoch 010:     37 / 907 loss=5.709, nll_loss=1.889, ppl=3.7, wps=1272.1, ups=0.76, wpb=1671.8, bsz=109.9, num_updates=8200, lr=2.544e-05, gnorm=2.045, train_wall=53, gb_free=11, wall=5040
+2024-01-07 08:44:40 | INFO | train_inner | epoch 010:    137 / 907 loss=5.635, nll_loss=1.796, ppl=3.47, wps=3169.2, ups=1.87, wpb=1691.1, bsz=108.3, num_updates=8300, lr=2.536e-05, gnorm=1.629, train_wall=53, gb_free=10.3, wall=5094
+2024-01-07 08:45:34 | INFO | train_inner | epoch 010:    237 / 907 loss=5.613, nll_loss=1.77, ppl=3.41, wps=3095.7, ups=1.86, wpb=1668.8, bsz=109.1, num_updates=8400, lr=2.528e-05, gnorm=1.579, train_wall=54, gb_free=10, wall=5147
+2024-01-07 08:46:28 | INFO | train_inner | epoch 010:    337 / 907 loss=5.616, nll_loss=1.777, ppl=3.43, wps=3131.1, ups=1.84, wpb=1702, bsz=116.2, num_updates=8500, lr=2.52e-05, gnorm=1.592, train_wall=54, gb_free=10, wall=5202
+2024-01-07 08:47:23 | INFO | train_inner | epoch 010:    437 / 907 loss=5.623, nll_loss=1.785, ppl=3.45, wps=3110.7, ups=1.84, wpb=1687.7, bsz=113, num_updates=8600, lr=2.512e-05, gnorm=1.674, train_wall=54, gb_free=11, wall=5256
+2024-01-07 08:48:17 | INFO | train_inner | epoch 010:    537 / 907 loss=5.647, nll_loss=1.82, ppl=3.53, wps=3123.1, ups=1.83, wpb=1704.2, bsz=114.6, num_updates=8700, lr=2.504e-05, gnorm=1.597, train_wall=54, gb_free=10.1, wall=5311
+2024-01-07 08:49:11 | INFO | train_inner | epoch 010:    637 / 907 loss=5.629, nll_loss=1.794, ppl=3.47, wps=3111.4, ups=1.85, wpb=1684.8, bsz=107.4, num_updates=8800, lr=2.496e-05, gnorm=1.539, train_wall=54, gb_free=10.7, wall=5365
+2024-01-07 08:50:05 | INFO | train_inner | epoch 010:    737 / 907 loss=5.648, nll_loss=1.821, ppl=3.53, wps=3098.1, ups=1.85, wpb=1676.5, bsz=113, num_updates=8900, lr=2.488e-05, gnorm=1.632, train_wall=54, gb_free=10.2, wall=5419
+2024-01-07 08:50:59 | INFO | train_inner | epoch 010:    837 / 907 loss=5.623, nll_loss=1.789, ppl=3.46, wps=3133.8, ups=1.85, wpb=1693.9, bsz=111.8, num_updates=9000, lr=2.48e-05, gnorm=1.631, train_wall=54, gb_free=10.5, wall=5473
+2024-01-07 08:51:37 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 08:51:37 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:51:37 | INFO | valid | epoch 010 | valid on 'valid' subset | loss 5.563 | nll_loss 1.656 | ppl 3.15 | wps 4174.1 | wpb 574.5 | bsz 68 | num_updates 9070 | best_loss 5.563
+2024-01-07 08:51:37 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 10 @ 9070 updates
+2024-01-07 08:51:37 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:52:05 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 08:52:52 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 10 @ 9070 updates, score 5.563) (writing took 75.2664865119732 seconds)
+2024-01-07 08:52:52 | INFO | fairseq_cli.train | end of epoch 10 (average epoch stats below)
+2024-01-07 08:52:52 | INFO | train | epoch 010 | loss 5.634 | nll_loss 1.8 | ppl 3.48 | wps 2702.9 | ups 1.61 | wpb 1683.8 | bsz 111.2 | num_updates 9070 | lr 2.4744e-05 | gnorm 1.605 | train_wall 486 | gb_free 12.5 | wall 5586
+2024-01-07 08:52:52 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 08:52:52 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 08:52:52 | INFO | fairseq.trainer | begin training epoch 11
+2024-01-07 08:52:52 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 08:53:08 | INFO | train_inner | epoch 011:     30 / 907 loss=5.628, nll_loss=1.795, ppl=3.47, wps=1292.6, ups=0.78, wpb=1665.5, bsz=105.8, num_updates=9100, lr=2.472e-05, gnorm=1.536, train_wall=53, gb_free=10.6, wall=5602
+2024-01-07 08:54:01 | INFO | train_inner | epoch 011:    130 / 907 loss=5.579, nll_loss=1.733, ppl=3.33, wps=3151.2, ups=1.88, wpb=1672.5, bsz=115.4, num_updates=9200, lr=2.464e-05, gnorm=1.614, train_wall=53, gb_free=10.4, wall=5655
+2024-01-07 08:54:55 | INFO | train_inner | epoch 011:    230 / 907 loss=5.576, nll_loss=1.73, ppl=3.32, wps=3128.2, ups=1.88, wpb=1666.3, bsz=109.3, num_updates=9300, lr=2.456e-05, gnorm=1.579, train_wall=53, gb_free=11, wall=5708
+2024-01-07 08:55:49 | INFO | train_inner | epoch 011:    330 / 907 loss=5.588, nll_loss=1.746, ppl=3.35, wps=3154, ups=1.85, wpb=1704.2, bsz=110.9, num_updates=9400, lr=2.448e-05, gnorm=1.572, train_wall=54, gb_free=10.3, wall=5762
+2024-01-07 08:56:43 | INFO | train_inner | epoch 011:    430 / 907 loss=5.583, nll_loss=1.741, ppl=3.34, wps=3160.5, ups=1.85, wpb=1709.9, bsz=111.8, num_updates=9500, lr=2.44e-05, gnorm=1.512, train_wall=54, gb_free=10.7, wall=5816
+2024-01-07 08:57:36 | INFO | train_inner | epoch 011:    530 / 907 loss=5.586, nll_loss=1.743, ppl=3.35, wps=3096.9, ups=1.86, wpb=1662.8, bsz=108.6, num_updates=9600, lr=2.432e-05, gnorm=1.559, train_wall=53, gb_free=10.6, wall=5870
+2024-01-07 08:58:30 | INFO | train_inner | epoch 011:    630 / 907 loss=5.583, nll_loss=1.745, ppl=3.35, wps=3119.7, ups=1.86, wpb=1681.3, bsz=115, num_updates=9700, lr=2.424e-05, gnorm=1.537, train_wall=54, gb_free=10.4, wall=5924
+2024-01-07 08:59:24 | INFO | train_inner | epoch 011:    730 / 907 loss=5.571, nll_loss=1.727, ppl=3.31, wps=3093.3, ups=1.86, wpb=1665.6, bsz=109.9, num_updates=9800, lr=2.416e-05, gnorm=1.53, train_wall=54, gb_free=11, wall=5978
+2024-01-07 09:00:18 | INFO | train_inner | epoch 011:    830 / 907 loss=5.608, nll_loss=1.776, ppl=3.42, wps=3145.5, ups=1.85, wpb=1700.5, bsz=110.8, num_updates=9900, lr=2.408e-05, gnorm=1.495, train_wall=54, gb_free=10, wall=6032
+2024-01-07 09:01:00 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 09:01:00 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:01:00 | INFO | valid | epoch 011 | valid on 'valid' subset | loss 5.547 | nll_loss 1.667 | ppl 3.18 | wps 4134.2 | wpb 574.5 | bsz 68 | num_updates 9977 | best_loss 5.547
+2024-01-07 09:01:00 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 11 @ 9977 updates
+2024-01-07 09:01:00 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 09:01:27 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 09:02:21 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 11 @ 9977 updates, score 5.547) (writing took 80.44963858899428 seconds)
+2024-01-07 09:02:21 | INFO | fairseq_cli.train | end of epoch 11 (average epoch stats below)
+2024-01-07 09:02:21 | INFO | train | epoch 011 | loss 5.586 | nll_loss 1.745 | ppl 3.35 | wps 2686.5 | ups 1.6 | wpb 1683.8 | bsz 111.2 | num_updates 9977 | lr 2.40184e-05 | gnorm 1.553 | train_wall 484 | gb_free 12.5 | wall 6154
+2024-01-07 09:02:21 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:02:21 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 09:02:21 | INFO | fairseq.trainer | begin training epoch 12
+2024-01-07 09:02:21 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 09:02:33 | INFO | train_inner | epoch 012:     23 / 907 loss=5.589, nll_loss=1.752, ppl=3.37, wps=1251.5, ups=0.74, wpb=1686.1, bsz=108, num_updates=10000, lr=2.4e-05, gnorm=1.608, train_wall=53, gb_free=11, wall=6167
+2024-01-07 09:03:26 | INFO | train_inner | epoch 012:    123 / 907 loss=5.561, nll_loss=1.715, ppl=3.28, wps=3180.8, ups=1.87, wpb=1698.6, bsz=109.4, num_updates=10100, lr=2.392e-05, gnorm=1.596, train_wall=53, gb_free=10, wall=6220
+2024-01-07 09:04:20 | INFO | train_inner | epoch 012:    223 / 907 loss=5.523, nll_loss=1.669, ppl=3.18, wps=3094.3, ups=1.86, wpb=1661.4, bsz=112.4, num_updates=10200, lr=2.384e-05, gnorm=1.59, train_wall=53, gb_free=10.8, wall=6274
+2024-01-07 09:05:15 | INFO | train_inner | epoch 012:    323 / 907 loss=5.506, nll_loss=1.65, ppl=3.14, wps=3152.4, ups=1.83, wpb=1718.9, bsz=120.3, num_updates=10300, lr=2.376e-05, gnorm=1.489, train_wall=54, gb_free=10.3, wall=6328
+2024-01-07 09:06:09 | INFO | train_inner | epoch 012:    423 / 907 loss=5.523, nll_loss=1.672, ppl=3.19, wps=3095.3, ups=1.83, wpb=1690.6, bsz=113.4, num_updates=10400, lr=2.368e-05, gnorm=1.56, train_wall=54, gb_free=10.7, wall=6383
+2024-01-07 09:07:03 | INFO | train_inner | epoch 012:    523 / 907 loss=5.557, nll_loss=1.713, ppl=3.28, wps=3108.3, ups=1.86, wpb=1672.9, bsz=108.8, num_updates=10500, lr=2.36e-05, gnorm=1.49, train_wall=54, gb_free=11, wall=6437
+2024-01-07 09:07:57 | INFO | train_inner | epoch 012:    623 / 907 loss=5.557, nll_loss=1.714, ppl=3.28, wps=3118.3, ups=1.84, wpb=1691.5, bsz=107.8, num_updates=10600, lr=2.352e-05, gnorm=1.482, train_wall=54, gb_free=10.3, wall=6491
+2024-01-07 09:08:51 | INFO | train_inner | epoch 012:    723 / 907 loss=5.541, nll_loss=1.694, ppl=3.24, wps=3110.2, ups=1.85, wpb=1677.8, bsz=106.3, num_updates=10700, lr=2.344e-05, gnorm=1.529, train_wall=54, gb_free=10.9, wall=6545
+2024-01-07 09:09:45 | INFO | train_inner | epoch 012:    823 / 907 loss=5.551, nll_loss=1.708, ppl=3.27, wps=3109.7, ups=1.86, wpb=1668, bsz=111, num_updates=10800, lr=2.336e-05, gnorm=1.502, train_wall=53, gb_free=10.3, wall=6598
+2024-01-07 09:10:30 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 09:10:30 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:10:30 | INFO | valid | epoch 012 | valid on 'valid' subset | loss 5.541 | nll_loss 1.638 | ppl 3.11 | wps 4239 | wpb 574.5 | bsz 68 | num_updates 10884 | best_loss 5.541
+2024-01-07 09:10:30 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 12 @ 10884 updates
+2024-01-07 09:10:30 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 09:11:03 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 09:12:00 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 12 @ 10884 updates, score 5.541) (writing took 90.13862547598546 seconds)
+2024-01-07 09:12:01 | INFO | fairseq_cli.train | end of epoch 12 (average epoch stats below)
+2024-01-07 09:12:01 | INFO | train | epoch 012 | loss 5.54 | nll_loss 1.693 | ppl 3.23 | wps 2634.4 | ups 1.56 | wpb 1683.8 | bsz 111.2 | num_updates 10884 | lr 2.32928e-05 | gnorm 1.531 | train_wall 486 | gb_free 12.4 | wall 6734
+2024-01-07 09:12:01 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:12:01 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 09:12:01 | INFO | fairseq.trainer | begin training epoch 13
+2024-01-07 09:12:01 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 09:12:09 | INFO | train_inner | epoch 013:     16 / 907 loss=5.545, nll_loss=1.703, ppl=3.26, wps=1169.7, ups=0.69, wpb=1687.1, bsz=113, num_updates=10900, lr=2.328e-05, gnorm=1.506, train_wall=53, gb_free=10.1, wall=6743
+2024-01-07 09:13:02 | INFO | train_inner | epoch 013:    116 / 907 loss=5.475, nll_loss=1.613, ppl=3.06, wps=3163.4, ups=1.9, wpb=1669, bsz=111.7, num_updates=11000, lr=2.32e-05, gnorm=1.465, train_wall=52, gb_free=10.7, wall=6795
+2024-01-07 09:13:55 | INFO | train_inner | epoch 013:    216 / 907 loss=5.479, nll_loss=1.618, ppl=3.07, wps=3147.2, ups=1.87, wpb=1679.6, bsz=113.3, num_updates=11100, lr=2.312e-05, gnorm=1.483, train_wall=53, gb_free=10.8, wall=6849
+2024-01-07 09:14:49 | INFO | train_inner | epoch 013:    316 / 907 loss=5.497, nll_loss=1.639, ppl=3.12, wps=3145, ups=1.85, wpb=1702.3, bsz=113.4, num_updates=11200, lr=2.304e-05, gnorm=1.514, train_wall=54, gb_free=9.9, wall=6903
+2024-01-07 09:15:43 | INFO | train_inner | epoch 013:    416 / 907 loss=5.51, nll_loss=1.658, ppl=3.16, wps=3138.7, ups=1.86, wpb=1684.3, bsz=111.4, num_updates=11300, lr=2.296e-05, gnorm=1.48, train_wall=53, gb_free=10.7, wall=6957
+2024-01-07 09:16:37 | INFO | train_inner | epoch 013:    516 / 907 loss=5.533, nll_loss=1.686, ppl=3.22, wps=3096.7, ups=1.86, wpb=1662.1, bsz=107.6, num_updates=11400, lr=2.288e-05, gnorm=1.548, train_wall=53, gb_free=10.9, wall=7010
+2024-01-07 09:17:31 | INFO | train_inner | epoch 013:    616 / 907 loss=5.473, nll_loss=1.614, ppl=3.06, wps=3170.2, ups=1.84, wpb=1722.9, bsz=115.4, num_updates=11500, lr=2.28e-05, gnorm=1.467, train_wall=54, gb_free=10, wall=7065
+2024-01-07 09:18:25 | INFO | train_inner | epoch 013:    716 / 907 loss=5.513, nll_loss=1.661, ppl=3.16, wps=3089.1, ups=1.86, wpb=1658.7, bsz=107.6, num_updates=11600, lr=2.272e-05, gnorm=1.488, train_wall=53, gb_free=10.1, wall=7118
+2024-01-07 09:19:19 | INFO | train_inner | epoch 013:    816 / 907 loss=5.505, nll_loss=1.655, ppl=3.15, wps=3123.8, ups=1.85, wpb=1684.2, bsz=110.6, num_updates=11700, lr=2.264e-05, gnorm=1.5, train_wall=54, gb_free=10.5, wall=7172
+2024-01-07 09:20:08 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 09:20:08 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:20:08 | INFO | valid | epoch 013 | valid on 'valid' subset | loss 5.545 | nll_loss 1.642 | ppl 3.12 | wps 4154.8 | wpb 574.5 | bsz 68 | num_updates 11791 | best_loss 5.541
+2024-01-07 09:20:08 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 13 @ 11791 updates
+2024-01-07 09:20:08 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5451.pt
+2024-01-07 09:20:29 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5451.pt
+2024-01-07 09:21:18 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5451.pt (epoch 13 @ 11791 updates, score 5.545) (writing took 70.67636355001014 seconds)
+2024-01-07 09:21:19 | INFO | fairseq_cli.train | end of epoch 13 (average epoch stats below)
+2024-01-07 09:21:19 | INFO | train | epoch 013 | loss 5.501 | nll_loss 1.647 | ppl 3.13 | wps 2736.9 | ups 1.63 | wpb 1683.8 | bsz 111.2 | num_updates 11791 | lr 2.25672e-05 | gnorm 1.493 | train_wall 484 | gb_free 12.4 | wall 7292
+2024-01-07 09:21:19 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:21:19 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 09:21:19 | INFO | fairseq.trainer | begin training epoch 14
+2024-01-07 09:21:19 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 09:21:23 | INFO | train_inner | epoch 014:      9 / 907 loss=5.518, nll_loss=1.67, ppl=3.18, wps=1352, ups=0.8, wpb=1687.5, bsz=109.4, num_updates=11800, lr=2.256e-05, gnorm=1.504, train_wall=53, gb_free=9.9, wall=7297
+2024-01-07 09:22:17 | INFO | train_inner | epoch 014:    109 / 907 loss=5.459, nll_loss=1.596, ppl=3.02, wps=3163.6, ups=1.87, wpb=1691.9, bsz=114.6, num_updates=11900, lr=2.248e-05, gnorm=1.434, train_wall=53, gb_free=10.5, wall=7350
+2024-01-07 09:23:10 | INFO | train_inner | epoch 014:    209 / 907 loss=5.448, nll_loss=1.583, ppl=2.99, wps=3125.1, ups=1.87, wpb=1672.9, bsz=115.4, num_updates=12000, lr=2.24e-05, gnorm=1.49, train_wall=53, gb_free=10.2, wall=7404
+2024-01-07 09:24:04 | INFO | train_inner | epoch 014:    309 / 907 loss=5.456, nll_loss=1.593, ppl=3.02, wps=3099.9, ups=1.86, wpb=1670.2, bsz=112.4, num_updates=12100, lr=2.232e-05, gnorm=1.673, train_wall=54, gb_free=10.9, wall=7458
+2024-01-07 09:24:58 | INFO | train_inner | epoch 014:    409 / 907 loss=5.448, nll_loss=1.584, ppl=3, wps=3083.7, ups=1.85, wpb=1665.1, bsz=112.6, num_updates=12200, lr=2.224e-05, gnorm=1.44, train_wall=54, gb_free=11, wall=7512
+2024-01-07 09:25:53 | INFO | train_inner | epoch 014:    509 / 907 loss=5.453, nll_loss=1.589, ppl=3.01, wps=3102.3, ups=1.84, wpb=1686.3, bsz=109.1, num_updates=12300, lr=2.216e-05, gnorm=1.465, train_wall=54, gb_free=10.6, wall=7566
+2024-01-07 09:26:47 | INFO | train_inner | epoch 014:    609 / 907 loss=5.476, nll_loss=1.62, ppl=3.07, wps=3102.6, ups=1.86, wpb=1672.3, bsz=111.4, num_updates=12400, lr=2.208e-05, gnorm=1.491, train_wall=54, gb_free=10.2, wall=7620
+2024-01-07 09:27:41 | INFO | train_inner | epoch 014:    709 / 907 loss=5.488, nll_loss=1.632, ppl=3.1, wps=3126.4, ups=1.84, wpb=1701.8, bsz=106.2, num_updates=12500, lr=2.2e-05, gnorm=1.448, train_wall=54, gb_free=10.6, wall=7675
+2024-01-07 09:28:35 | INFO | train_inner | epoch 014:    809 / 907 loss=5.468, nll_loss=1.611, ppl=3.05, wps=3141.4, ups=1.85, wpb=1695, bsz=110.3, num_updates=12600, lr=2.192e-05, gnorm=1.42, train_wall=54, gb_free=10.4, wall=7729
+2024-01-07 09:29:28 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 09:29:28 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:29:28 | INFO | valid | epoch 014 | valid on 'valid' subset | loss 5.534 | nll_loss 1.627 | ppl 3.09 | wps 4221.8 | wpb 574.5 | bsz 68 | num_updates 12698 | best_loss 5.534
+2024-01-07 09:29:28 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 14 @ 12698 updates
+2024-01-07 09:29:28 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 09:30:12 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 09:32:49 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 14 @ 12698 updates, score 5.534) (writing took 200.7417104729684 seconds)
+2024-01-07 09:32:50 | INFO | fairseq_cli.train | end of epoch 14 (average epoch stats below)
+2024-01-07 09:32:50 | INFO | train | epoch 014 | loss 5.463 | nll_loss 1.602 | ppl 3.04 | wps 2209.9 | ups 1.31 | wpb 1683.8 | bsz 111.2 | num_updates 12698 | lr 2.18416e-05 | gnorm 1.474 | train_wall 486 | gb_free 12.3 | wall 7983
+2024-01-07 09:32:50 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:32:50 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 09:32:50 | INFO | fairseq.trainer | begin training epoch 15
+2024-01-07 09:32:50 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 09:32:51 | INFO | train_inner | epoch 015:      2 / 907 loss=5.466, nll_loss=1.609, ppl=3.05, wps=661.6, ups=0.39, wpb=1696.3, bsz=109, num_updates=12700, lr=2.184e-05, gnorm=1.408, train_wall=54, gb_free=10.2, wall=7985
+2024-01-07 09:33:44 | INFO | train_inner | epoch 015:    102 / 907 loss=5.43, nll_loss=1.56, ppl=2.95, wps=3176.4, ups=1.89, wpb=1682, bsz=110.2, num_updates=12800, lr=2.176e-05, gnorm=1.421, train_wall=53, gb_free=11.4, wall=8038
+2024-01-07 09:34:38 | INFO | train_inner | epoch 015:    202 / 907 loss=5.401, nll_loss=1.527, ppl=2.88, wps=3123.9, ups=1.88, wpb=1663.8, bsz=110.4, num_updates=12900, lr=2.168e-05, gnorm=1.432, train_wall=53, gb_free=10.2, wall=8091
+2024-01-07 09:35:32 | INFO | train_inner | epoch 015:    302 / 907 loss=5.42, nll_loss=1.549, ppl=2.93, wps=3157.7, ups=1.85, wpb=1703.8, bsz=113.1, num_updates=13000, lr=2.16e-05, gnorm=1.621, train_wall=54, gb_free=10.3, wall=8145
+2024-01-07 09:36:25 | INFO | train_inner | epoch 015:    402 / 907 loss=5.419, nll_loss=1.546, ppl=2.92, wps=3133, ups=1.86, wpb=1681.2, bsz=109.5, num_updates=13100, lr=2.152e-05, gnorm=1.418, train_wall=53, gb_free=10.4, wall=8199
+2024-01-07 09:37:19 | INFO | train_inner | epoch 015:    502 / 907 loss=5.445, nll_loss=1.582, ppl=2.99, wps=3136, ups=1.85, wpb=1696.2, bsz=109.7, num_updates=13200, lr=2.144e-05, gnorm=1.425, train_wall=54, gb_free=9.9, wall=8253
+2024-01-07 09:38:14 | INFO | train_inner | epoch 015:    602 / 907 loss=5.45, nll_loss=1.59, ppl=3.01, wps=3160.6, ups=1.85, wpb=1712.4, bsz=111.9, num_updates=13300, lr=2.136e-05, gnorm=1.524, train_wall=54, gb_free=10.9, wall=8307
+2024-01-07 09:39:07 | INFO | train_inner | epoch 015:    702 / 907 loss=5.419, nll_loss=1.552, ppl=2.93, wps=3107.9, ups=1.86, wpb=1672.8, bsz=114.9, num_updates=13400, lr=2.128e-05, gnorm=1.433, train_wall=53, gb_free=10.9, wall=8361
+2024-01-07 09:40:02 | INFO | train_inner | epoch 015:    802 / 907 loss=5.437, nll_loss=1.576, ppl=2.98, wps=3139, ups=1.84, wpb=1706.5, bsz=112.6, num_updates=13500, lr=2.12e-05, gnorm=1.451, train_wall=54, gb_free=10.2, wall=8415
+2024-01-07 09:40:55 | INFO | train_inner | epoch 015:    902 / 907 loss=5.443, nll_loss=1.582, ppl=2.99, wps=3084.2, ups=1.87, wpb=1645.9, bsz=108.4, num_updates=13600, lr=2.112e-05, gnorm=1.491, train_wall=53, gb_free=10.9, wall=8469
+2024-01-07 09:40:57 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 09:40:57 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:40:58 | INFO | valid | epoch 015 | valid on 'valid' subset | loss 5.537 | nll_loss 1.634 | ppl 3.1 | wps 4219.2 | wpb 574.5 | bsz 68 | num_updates 13605 | best_loss 5.534
+2024-01-07 09:40:58 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 15 @ 13605 updates
+2024-01-07 09:40:58 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5371.pt
+2024-01-07 09:41:15 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5371.pt
+2024-01-07 09:41:56 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5371.pt (epoch 15 @ 13605 updates, score 5.537) (writing took 58.39755256799981 seconds)
+2024-01-07 09:41:56 | INFO | fairseq_cli.train | end of epoch 15 (average epoch stats below)
+2024-01-07 09:41:57 | INFO | train | epoch 015 | loss 5.429 | nll_loss 1.563 | ppl 2.95 | wps 2792.9 | ups 1.66 | wpb 1683.8 | bsz 111.2 | num_updates 13605 | lr 2.1116e-05 | gnorm 1.469 | train_wall 484 | gb_free 12.5 | wall 8530
+2024-01-07 09:41:57 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:41:57 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 09:41:57 | INFO | fairseq.trainer | begin training epoch 16
+2024-01-07 09:41:57 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 09:42:48 | INFO | train_inner | epoch 016:     95 / 907 loss=5.39, nll_loss=1.512, ppl=2.85, wps=1480.7, ups=0.89, wpb=1665.2, bsz=108.6, num_updates=13700, lr=2.104e-05, gnorm=1.433, train_wall=53, gb_free=9.9, wall=8581
+2024-01-07 09:43:41 | INFO | train_inner | epoch 016:    195 / 907 loss=5.389, nll_loss=1.512, ppl=2.85, wps=3136.3, ups=1.86, wpb=1682.3, bsz=110.7, num_updates=13800, lr=2.096e-05, gnorm=1.414, train_wall=53, gb_free=10.4, wall=8635
+2024-01-07 09:44:36 | INFO | train_inner | epoch 016:    295 / 907 loss=5.391, nll_loss=1.517, ppl=2.86, wps=3090.8, ups=1.84, wpb=1680.8, bsz=116.1, num_updates=13900, lr=2.088e-05, gnorm=1.431, train_wall=54, gb_free=10.5, wall=8689
+2024-01-07 09:45:30 | INFO | train_inner | epoch 016:    395 / 907 loss=5.398, nll_loss=1.526, ppl=2.88, wps=3093.7, ups=1.85, wpb=1671.1, bsz=113.8, num_updates=14000, lr=2.08e-05, gnorm=1.424, train_wall=54, gb_free=10.5, wall=8743
+2024-01-07 09:46:24 | INFO | train_inner | epoch 016:    495 / 907 loss=5.383, nll_loss=1.509, ppl=2.85, wps=3114.4, ups=1.84, wpb=1694.3, bsz=115.1, num_updates=14100, lr=2.072e-05, gnorm=1.406, train_wall=54, gb_free=10, wall=8798
+2024-01-07 09:47:18 | INFO | train_inner | epoch 016:    595 / 907 loss=5.41, nll_loss=1.541, ppl=2.91, wps=3112.9, ups=1.85, wpb=1684.5, bsz=104.6, num_updates=14200, lr=2.064e-05, gnorm=1.431, train_wall=54, gb_free=9.9, wall=8852
+2024-01-07 09:48:12 | INFO | train_inner | epoch 016:    695 / 907 loss=5.391, nll_loss=1.518, ppl=2.86, wps=3109.7, ups=1.85, wpb=1685.3, bsz=112.5, num_updates=14300, lr=2.056e-05, gnorm=1.439, train_wall=54, gb_free=10, wall=8906
+2024-01-07 09:49:06 | INFO | train_inner | epoch 016:    795 / 907 loss=5.42, nll_loss=1.554, ppl=2.94, wps=3125.9, ups=1.85, wpb=1688.5, bsz=109.8, num_updates=14400, lr=2.048e-05, gnorm=1.413, train_wall=54, gb_free=10.1, wall=8960
+2024-01-07 09:50:01 | INFO | train_inner | epoch 016:    895 / 907 loss=5.404, nll_loss=1.535, ppl=2.9, wps=3145.5, ups=1.84, wpb=1705.7, bsz=109.4, num_updates=14500, lr=2.04e-05, gnorm=1.404, train_wall=54, gb_free=10.1, wall=9014
+2024-01-07 09:50:07 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 09:50:07 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:50:07 | INFO | valid | epoch 016 | valid on 'valid' subset | loss 5.516 | nll_loss 1.615 | ppl 3.06 | wps 4135.2 | wpb 574.5 | bsz 68 | num_updates 14512 | best_loss 5.516
+2024-01-07 09:50:07 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 16 @ 14512 updates
+2024-01-07 09:50:07 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 09:50:55 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 09:53:02 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 16 @ 14512 updates, score 5.516) (writing took 174.6616025150288 seconds)
+2024-01-07 09:53:06 | INFO | fairseq_cli.train | end of epoch 16 (average epoch stats below)
+2024-01-07 09:53:06 | INFO | train | epoch 016 | loss 5.397 | nll_loss 1.524 | ppl 2.88 | wps 2281.7 | ups 1.36 | wpb 1683.8 | bsz 111.2 | num_updates 14512 | lr 2.03904e-05 | gnorm 1.421 | train_wall 487 | gb_free 12.4 | wall 9199
+2024-01-07 09:53:06 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 09:53:06 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 09:53:06 | INFO | fairseq.trainer | begin training epoch 17
+2024-01-07 09:53:06 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 09:53:53 | INFO | train_inner | epoch 017:     88 / 907 loss=5.359, nll_loss=1.477, ppl=2.78, wps=728.7, ups=0.43, wpb=1696.6, bsz=114.1, num_updates=14600, lr=2.032e-05, gnorm=1.405, train_wall=53, gb_free=10.3, wall=9247
+2024-01-07 09:54:47 | INFO | train_inner | epoch 017:    188 / 907 loss=5.356, nll_loss=1.475, ppl=2.78, wps=3137.8, ups=1.88, wpb=1672.5, bsz=108.7, num_updates=14700, lr=2.024e-05, gnorm=1.429, train_wall=53, gb_free=10.9, wall=9300
+2024-01-07 09:55:41 | INFO | train_inner | epoch 017:    288 / 907 loss=5.38, nll_loss=1.503, ppl=2.83, wps=3149.7, ups=1.85, wpb=1698.6, bsz=109.9, num_updates=14800, lr=2.016e-05, gnorm=1.819, train_wall=54, gb_free=11, wall=9354
+2024-01-07 09:56:34 | INFO | train_inner | epoch 017:    388 / 907 loss=5.343, nll_loss=1.459, ppl=2.75, wps=3118.3, ups=1.86, wpb=1672.7, bsz=112.1, num_updates=14900, lr=2.008e-05, gnorm=1.385, train_wall=53, gb_free=11, wall=9408
+2024-01-07 09:57:28 | INFO | train_inner | epoch 017:    488 / 907 loss=5.369, nll_loss=1.49, ppl=2.81, wps=3156.6, ups=1.86, wpb=1696.1, bsz=112.2, num_updates=15000, lr=2e-05, gnorm=1.398, train_wall=53, gb_free=10.9, wall=9462
+2024-01-07 09:58:22 | INFO | train_inner | epoch 017:    588 / 907 loss=5.363, nll_loss=1.482, ppl=2.79, wps=3100.7, ups=1.86, wpb=1664.5, bsz=108.2, num_updates=15100, lr=1.992e-05, gnorm=1.412, train_wall=53, gb_free=9.8, wall=9515
+2024-01-07 09:59:16 | INFO | train_inner | epoch 017:    688 / 907 loss=5.379, nll_loss=1.505, ppl=2.84, wps=3100.4, ups=1.85, wpb=1673.2, bsz=112.1, num_updates=15200, lr=1.984e-05, gnorm=1.407, train_wall=54, gb_free=10.3, wall=9569
+2024-01-07 10:00:10 | INFO | train_inner | epoch 017:    788 / 907 loss=5.37, nll_loss=1.493, ppl=2.82, wps=3123.7, ups=1.85, wpb=1689.6, bsz=110.8, num_updates=15300, lr=1.976e-05, gnorm=1.378, train_wall=54, gb_free=10.4, wall=9623
+2024-01-07 10:01:04 | INFO | train_inner | epoch 017:    888 / 907 loss=5.377, nll_loss=1.503, ppl=2.84, wps=3123.8, ups=1.86, wpb=1682.5, bsz=113, num_updates=15400, lr=1.968e-05, gnorm=1.443, train_wall=54, gb_free=10.4, wall=9677
+2024-01-07 10:01:14 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 10:01:14 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:01:14 | INFO | valid | epoch 017 | valid on 'valid' subset | loss 5.535 | nll_loss 1.621 | ppl 3.08 | wps 4140.1 | wpb 574.5 | bsz 68 | num_updates 15419 | best_loss 5.516
+2024-01-07 10:01:14 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 17 @ 15419 updates
+2024-01-07 10:01:14 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5354.pt
+2024-01-07 10:01:38 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5354.pt
+2024-01-07 10:02:40 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5354.pt (epoch 17 @ 15419 updates, score 5.535) (writing took 86.29262758098776 seconds)
+2024-01-07 10:02:41 | INFO | fairseq_cli.train | end of epoch 17 (average epoch stats below)
+2024-01-07 10:02:41 | INFO | train | epoch 017 | loss 5.367 | nll_loss 1.488 | ppl 2.81 | wps 2654.5 | ups 1.58 | wpb 1683.8 | bsz 111.2 | num_updates 15419 | lr 1.96648e-05 | gnorm 1.452 | train_wall 484 | gb_free 12.4 | wall 9775
+2024-01-07 10:02:41 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:02:41 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 10:02:41 | INFO | fairseq.trainer | begin training epoch 18
+2024-01-07 10:02:41 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 10:03:24 | INFO | train_inner | epoch 018:     81 / 907 loss=5.326, nll_loss=1.438, ppl=2.71, wps=1206.8, ups=0.71, wpb=1699.4, bsz=111.4, num_updates=15500, lr=1.96e-05, gnorm=1.371, train_wall=53, gb_free=10.6, wall=9818
+2024-01-07 10:04:17 | INFO | train_inner | epoch 018:    181 / 907 loss=5.314, nll_loss=1.423, ppl=2.68, wps=3122.9, ups=1.88, wpb=1658.5, bsz=111.7, num_updates=15600, lr=1.952e-05, gnorm=1.41, train_wall=53, gb_free=10.8, wall=9871
+2024-01-07 10:05:11 | INFO | train_inner | epoch 018:    281 / 907 loss=5.337, nll_loss=1.452, ppl=2.74, wps=3109.6, ups=1.85, wpb=1678.5, bsz=114.7, num_updates=15700, lr=1.944e-05, gnorm=1.434, train_wall=54, gb_free=9.9, wall=9925
+2024-01-07 10:06:05 | INFO | train_inner | epoch 018:    381 / 907 loss=5.344, nll_loss=1.459, ppl=2.75, wps=3105.5, ups=1.86, wpb=1673.6, bsz=106.8, num_updates=15800, lr=1.936e-05, gnorm=1.416, train_wall=54, gb_free=10.4, wall=9979
+2024-01-07 10:07:00 | INFO | train_inner | epoch 018:    481 / 907 loss=5.34, nll_loss=1.458, ppl=2.75, wps=3115.9, ups=1.84, wpb=1693, bsz=111.7, num_updates=15900, lr=1.928e-05, gnorm=1.408, train_wall=54, gb_free=10.1, wall=10033
+2024-01-07 10:07:54 | INFO | train_inner | epoch 018:    581 / 907 loss=5.358, nll_loss=1.478, ppl=2.79, wps=3099.4, ups=1.85, wpb=1678.3, bsz=107, num_updates=16000, lr=1.92e-05, gnorm=1.414, train_wall=54, gb_free=10.8, wall=10087
+2024-01-07 10:08:48 | INFO | train_inner | epoch 018:    681 / 907 loss=5.356, nll_loss=1.48, ppl=2.79, wps=3118.7, ups=1.84, wpb=1693.6, bsz=112.9, num_updates=16100, lr=1.912e-05, gnorm=1.413, train_wall=54, gb_free=11, wall=10142
+2024-01-07 10:09:42 | INFO | train_inner | epoch 018:    781 / 907 loss=5.356, nll_loss=1.479, ppl=2.79, wps=3120.6, ups=1.85, wpb=1687.6, bsz=111.5, num_updates=16200, lr=1.904e-05, gnorm=1.406, train_wall=54, gb_free=10.6, wall=10196
+2024-01-07 10:10:37 | INFO | train_inner | epoch 018:    881 / 907 loss=5.345, nll_loss=1.465, ppl=2.76, wps=3137.8, ups=1.84, wpb=1704, bsz=111, num_updates=16300, lr=1.896e-05, gnorm=1.422, train_wall=54, gb_free=10.2, wall=10250
+2024-01-07 10:10:50 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 10:10:50 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:10:51 | INFO | valid | epoch 018 | valid on 'valid' subset | loss 5.524 | nll_loss 1.635 | ppl 3.11 | wps 4167.6 | wpb 574.5 | bsz 68 | num_updates 16326 | best_loss 5.516
+2024-01-07 10:10:51 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 18 @ 16326 updates
+2024-01-07 10:10:51 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5243.pt
+2024-01-07 10:11:16 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5243.pt
+2024-01-07 10:11:57 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5243.pt (epoch 18 @ 16326 updates, score 5.524) (writing took 66.57288578001317 seconds)
+2024-01-07 10:11:58 | INFO | fairseq_cli.train | end of epoch 18 (average epoch stats below)
+2024-01-07 10:11:58 | INFO | train | epoch 018 | loss 5.341 | nll_loss 1.458 | ppl 2.75 | wps 2742 | ups 1.63 | wpb 1683.8 | bsz 111.2 | num_updates 16326 | lr 1.89392e-05 | gnorm 1.411 | train_wall 486 | gb_free 12.6 | wall 10332
+2024-01-07 10:11:58 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:11:58 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 10:11:58 | INFO | fairseq.trainer | begin training epoch 19
+2024-01-07 10:11:58 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 10:12:38 | INFO | train_inner | epoch 019:     74 / 907 loss=5.328, nll_loss=1.443, ppl=2.72, wps=1394.3, ups=0.83, wpb=1689.2, bsz=113.8, num_updates=16400, lr=1.888e-05, gnorm=1.415, train_wall=53, gb_free=10.8, wall=10371
+2024-01-07 10:13:31 | INFO | train_inner | epoch 019:    174 / 907 loss=5.313, nll_loss=1.423, ppl=2.68, wps=3112.5, ups=1.88, wpb=1651.2, bsz=109.8, num_updates=16500, lr=1.88e-05, gnorm=1.399, train_wall=53, gb_free=10.6, wall=10424
+2024-01-07 10:14:24 | INFO | train_inner | epoch 019:    274 / 907 loss=5.299, nll_loss=1.405, ppl=2.65, wps=3113, ups=1.88, wpb=1658.8, bsz=108.6, num_updates=16600, lr=1.872e-05, gnorm=1.372, train_wall=53, gb_free=9.8, wall=10478
+2024-01-07 10:15:18 | INFO | train_inner | epoch 019:    374 / 907 loss=5.312, nll_loss=1.421, ppl=2.68, wps=3134.8, ups=1.87, wpb=1680.8, bsz=111, num_updates=16700, lr=1.864e-05, gnorm=1.418, train_wall=53, gb_free=10.8, wall=10531
+2024-01-07 10:16:11 | INFO | train_inner | epoch 019:    474 / 907 loss=5.3, nll_loss=1.407, ppl=2.65, wps=3128, ups=1.87, wpb=1675.8, bsz=110.8, num_updates=16800, lr=1.856e-05, gnorm=1.395, train_wall=53, gb_free=10.1, wall=10585
+2024-01-07 10:17:05 | INFO | train_inner | epoch 019:    574 / 907 loss=5.303, nll_loss=1.413, ppl=2.66, wps=3137.1, ups=1.84, wpb=1700.3, bsz=113.5, num_updates=16900, lr=1.848e-05, gnorm=1.365, train_wall=54, gb_free=10.2, wall=10639
+2024-01-07 10:17:59 | INFO | train_inner | epoch 019:    674 / 907 loss=5.329, nll_loss=1.445, ppl=2.72, wps=3155.9, ups=1.85, wpb=1702.5, bsz=111.7, num_updates=17000, lr=1.84e-05, gnorm=1.4, train_wall=54, gb_free=11, wall=10693
+2024-01-07 10:18:53 | INFO | train_inner | epoch 019:    774 / 907 loss=5.322, nll_loss=1.436, ppl=2.71, wps=3115.3, ups=1.85, wpb=1685, bsz=109.3, num_updates=17100, lr=1.832e-05, gnorm=1.438, train_wall=54, gb_free=10.6, wall=10747
+2024-01-07 10:19:47 | INFO | train_inner | epoch 019:    874 / 907 loss=5.33, nll_loss=1.446, ppl=2.72, wps=3153.4, ups=1.85, wpb=1702.3, bsz=113.5, num_updates=17200, lr=1.824e-05, gnorm=1.391, train_wall=54, gb_free=9.8, wall=10801
+2024-01-07 10:20:05 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 10:20:05 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:20:05 | INFO | valid | epoch 019 | valid on 'valid' subset | loss 5.523 | nll_loss 1.629 | ppl 3.09 | wps 4115.3 | wpb 574.5 | bsz 68 | num_updates 17233 | best_loss 5.516
+2024-01-07 10:20:05 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 19 @ 17233 updates
+2024-01-07 10:20:05 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5232.pt
+2024-01-07 10:20:26 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5232.pt
+2024-01-07 10:21:32 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5232.pt (epoch 19 @ 17233 updates, score 5.523) (writing took 86.40363655798137 seconds)
+2024-01-07 10:21:33 | INFO | fairseq_cli.train | end of epoch 19 (average epoch stats below)
+2024-01-07 10:21:33 | INFO | train | epoch 019 | loss 5.314 | nll_loss 1.425 | ppl 2.69 | wps 2658.5 | ups 1.58 | wpb 1683.8 | bsz 111.2 | num_updates 17233 | lr 1.82136e-05 | gnorm 1.398 | train_wall 484 | gb_free 12.4 | wall 10906
+2024-01-07 10:21:33 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:21:33 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 10:21:33 | INFO | fairseq.trainer | begin training epoch 20
+2024-01-07 10:21:33 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 10:22:08 | INFO | train_inner | epoch 020:     67 / 907 loss=5.29, nll_loss=1.395, ppl=2.63, wps=1186.6, ups=0.71, wpb=1668.5, bsz=109.8, num_updates=17300, lr=1.816e-05, gnorm=1.389, train_wall=53, gb_free=11, wall=10942
+2024-01-07 10:23:01 | INFO | train_inner | epoch 020:    167 / 907 loss=5.299, nll_loss=1.404, ppl=2.65, wps=3128.3, ups=1.88, wpb=1661.2, bsz=107.3, num_updates=17400, lr=1.808e-05, gnorm=1.412, train_wall=53, gb_free=11, wall=10995
+2024-01-07 10:23:55 | INFO | train_inner | epoch 020:    267 / 907 loss=5.288, nll_loss=1.393, ppl=2.63, wps=3153.3, ups=1.85, wpb=1704, bsz=109.8, num_updates=17500, lr=1.8e-05, gnorm=1.377, train_wall=54, gb_free=10.4, wall=11049
+2024-01-07 10:24:49 | INFO | train_inner | epoch 020:    367 / 907 loss=5.275, nll_loss=1.378, ppl=2.6, wps=3098.7, ups=1.85, wpb=1673.1, bsz=114.2, num_updates=17600, lr=1.792e-05, gnorm=1.363, train_wall=54, gb_free=10, wall=11103
+2024-01-07 10:25:44 | INFO | train_inner | epoch 020:    467 / 907 loss=5.282, nll_loss=1.388, ppl=2.62, wps=3149.7, ups=1.83, wpb=1722.8, bsz=114.2, num_updates=17700, lr=1.784e-05, gnorm=1.911, train_wall=54, gb_free=9.9, wall=11157
+2024-01-07 10:26:38 | INFO | train_inner | epoch 020:    567 / 907 loss=5.308, nll_loss=1.419, ppl=2.67, wps=3119.8, ups=1.85, wpb=1686.3, bsz=109.6, num_updates=17800, lr=1.776e-05, gnorm=1.365, train_wall=54, gb_free=10.9, wall=11211
+2024-01-07 10:27:32 | INFO | train_inner | epoch 020:    667 / 907 loss=5.283, nll_loss=1.389, ppl=2.62, wps=3082.7, ups=1.84, wpb=1677.6, bsz=113, num_updates=17900, lr=1.768e-05, gnorm=1.419, train_wall=54, gb_free=10.9, wall=11266
+2024-01-07 10:28:27 | INFO | train_inner | epoch 020:    767 / 907 loss=5.29, nll_loss=1.398, ppl=2.63, wps=3118.9, ups=1.83, wpb=1704.2, bsz=111.9, num_updates=18000, lr=1.76e-05, gnorm=1.355, train_wall=54, gb_free=10.8, wall=11321
+2024-01-07 10:29:21 | INFO | train_inner | epoch 020:    867 / 907 loss=5.29, nll_loss=1.399, ppl=2.64, wps=3074.8, ups=1.87, wpb=1647.5, bsz=110.4, num_updates=18100, lr=1.752e-05, gnorm=1.386, train_wall=53, gb_free=10, wall=11374
+2024-01-07 10:29:42 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 10:29:42 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:29:42 | INFO | valid | epoch 020 | valid on 'valid' subset | loss 5.515 | nll_loss 1.595 | ppl 3.02 | wps 4064 | wpb 574.5 | bsz 68 | num_updates 18140 | best_loss 5.515
+2024-01-07 10:29:42 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 20 @ 18140 updates
+2024-01-07 10:29:43 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 10:30:19 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 10:31:35 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 20 @ 18140 updates, score 5.515) (writing took 112.77313424902968 seconds)
+2024-01-07 10:31:36 | INFO | fairseq_cli.train | end of epoch 20 (average epoch stats below)
+2024-01-07 10:31:36 | INFO | train | epoch 020 | loss 5.289 | nll_loss 1.395 | ppl 2.63 | wps 2530.3 | ups 1.5 | wpb 1683.8 | bsz 111.2 | num_updates 18140 | lr 1.7488e-05 | gnorm 1.442 | train_wall 486 | gb_free 12.4 | wall 11510
+2024-01-07 10:31:36 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:31:36 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 10:31:36 | INFO | fairseq.trainer | begin training epoch 21
+2024-01-07 10:31:36 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 10:32:08 | INFO | train_inner | epoch 021:     60 / 907 loss=5.276, nll_loss=1.379, ppl=2.6, wps=1004.7, ups=0.6, wpb=1683, bsz=110.1, num_updates=18200, lr=1.744e-05, gnorm=1.43, train_wall=53, gb_free=10.2, wall=11542
+2024-01-07 10:33:01 | INFO | train_inner | epoch 021:    160 / 907 loss=5.254, nll_loss=1.348, ppl=2.55, wps=3157.7, ups=1.88, wpb=1682, bsz=109, num_updates=18300, lr=1.736e-05, gnorm=1.419, train_wall=53, gb_free=10.2, wall=11595
+2024-01-07 10:33:55 | INFO | train_inner | epoch 021:    260 / 907 loss=5.278, nll_loss=1.382, ppl=2.61, wps=3166.5, ups=1.85, wpb=1709.7, bsz=111, num_updates=18400, lr=1.728e-05, gnorm=1.385, train_wall=54, gb_free=10.1, wall=11649
+2024-01-07 10:34:49 | INFO | train_inner | epoch 021:    360 / 907 loss=5.261, nll_loss=1.361, ppl=2.57, wps=3123.8, ups=1.86, wpb=1675.5, bsz=108.1, num_updates=18500, lr=1.72e-05, gnorm=1.372, train_wall=53, gb_free=11, wall=11703
+2024-01-07 10:35:43 | INFO | train_inner | epoch 021:    460 / 907 loss=5.261, nll_loss=1.362, ppl=2.57, wps=3101.9, ups=1.87, wpb=1661.1, bsz=112, num_updates=18600, lr=1.712e-05, gnorm=1.388, train_wall=53, gb_free=10.3, wall=11756
+2024-01-07 10:36:36 | INFO | train_inner | epoch 021:    560 / 907 loss=5.287, nll_loss=1.392, ppl=2.62, wps=3109.7, ups=1.86, wpb=1675.3, bsz=107.7, num_updates=18700, lr=1.704e-05, gnorm=1.396, train_wall=54, gb_free=10.7, wall=11810
+2024-01-07 10:37:30 | INFO | train_inner | epoch 021:    660 / 907 loss=5.261, nll_loss=1.363, ppl=2.57, wps=3134.1, ups=1.86, wpb=1689.3, bsz=117, num_updates=18800, lr=1.696e-05, gnorm=1.362, train_wall=54, gb_free=10, wall=11864
+2024-01-07 10:38:24 | INFO | train_inner | epoch 021:    760 / 907 loss=5.259, nll_loss=1.359, ppl=2.57, wps=3112.7, ups=1.86, wpb=1669.5, bsz=111.1, num_updates=18900, lr=1.688e-05, gnorm=1.38, train_wall=53, gb_free=10.9, wall=11917
+2024-01-07 10:39:18 | INFO | train_inner | epoch 021:    860 / 907 loss=5.278, nll_loss=1.386, ppl=2.61, wps=3147.5, ups=1.85, wpb=1700.4, bsz=112.2, num_updates=19000, lr=1.68e-05, gnorm=1.362, train_wall=54, gb_free=10.4, wall=11972
+2024-01-07 10:39:43 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 10:39:43 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:39:44 | INFO | valid | epoch 021 | valid on 'valid' subset | loss 5.514 | nll_loss 1.597 | ppl 3.02 | wps 4126.6 | wpb 574.5 | bsz 68 | num_updates 19047 | best_loss 5.514
+2024-01-07 10:39:44 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 21 @ 19047 updates
+2024-01-07 10:39:44 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 10:40:11 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 10:41:13 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 21 @ 19047 updates, score 5.514) (writing took 89.47402908396907 seconds)
+2024-01-07 10:41:14 | INFO | fairseq_cli.train | end of epoch 21 (average epoch stats below)
+2024-01-07 10:41:14 | INFO | train | epoch 021 | loss 5.267 | nll_loss 1.369 | ppl 2.58 | wps 2642.7 | ups 1.57 | wpb 1683.8 | bsz 111.2 | num_updates 19047 | lr 1.67624e-05 | gnorm 1.385 | train_wall 484 | gb_free 12.2 | wall 12088
+2024-01-07 10:41:14 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:41:14 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 10:41:14 | INFO | fairseq.trainer | begin training epoch 22
+2024-01-07 10:41:14 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 10:41:42 | INFO | train_inner | epoch 022:     53 / 907 loss=5.268, nll_loss=1.372, ppl=2.59, wps=1162.3, ups=0.69, wpb=1674.3, bsz=112.6, num_updates=19100, lr=1.672e-05, gnorm=1.36, train_wall=53, gb_free=10.9, wall=12116
+2024-01-07 10:42:35 | INFO | train_inner | epoch 022:    153 / 907 loss=5.238, nll_loss=1.333, ppl=2.52, wps=3149.7, ups=1.88, wpb=1673.5, bsz=110.1, num_updates=19200, lr=1.664e-05, gnorm=1.408, train_wall=53, gb_free=10.3, wall=12169
+2024-01-07 10:43:29 | INFO | train_inner | epoch 022:    253 / 907 loss=5.241, nll_loss=1.335, ppl=2.52, wps=3160, ups=1.86, wpb=1703, bsz=109, num_updates=19300, lr=1.656e-05, gnorm=1.373, train_wall=54, gb_free=10.2, wall=12223
+2024-01-07 10:44:23 | INFO | train_inner | epoch 022:    353 / 907 loss=5.238, nll_loss=1.332, ppl=2.52, wps=3099.4, ups=1.85, wpb=1676.1, bsz=112.2, num_updates=19400, lr=1.648e-05, gnorm=1.395, train_wall=54, gb_free=10.1, wall=12277
+2024-01-07 10:45:17 | INFO | train_inner | epoch 022:    453 / 907 loss=5.249, nll_loss=1.347, ppl=2.54, wps=3116.5, ups=1.84, wpb=1691, bsz=111.5, num_updates=19500, lr=1.64e-05, gnorm=1.363, train_wall=54, gb_free=10, wall=12331
+2024-01-07 10:46:11 | INFO | train_inner | epoch 022:    553 / 907 loss=5.247, nll_loss=1.343, ppl=2.54, wps=3075.2, ups=1.85, wpb=1661.2, bsz=106.4, num_updates=19600, lr=1.632e-05, gnorm=1.394, train_wall=54, gb_free=10, wall=12385
+2024-01-07 10:47:06 | INFO | train_inner | epoch 022:    653 / 907 loss=5.231, nll_loss=1.326, ppl=2.51, wps=3129.1, ups=1.82, wpb=1717.8, bsz=117.9, num_updates=19700, lr=1.624e-05, gnorm=1.341, train_wall=54, gb_free=10.7, wall=12440
+2024-01-07 10:48:00 | INFO | train_inner | epoch 022:    753 / 907 loss=5.24, nll_loss=1.337, ppl=2.53, wps=3090.3, ups=1.85, wpb=1674.8, bsz=111.5, num_updates=19800, lr=1.616e-05, gnorm=1.41, train_wall=54, gb_free=10.4, wall=12494
+2024-01-07 10:48:55 | INFO | train_inner | epoch 022:    853 / 907 loss=5.258, nll_loss=1.359, ppl=2.56, wps=3102.2, ups=1.84, wpb=1682.1, bsz=109.8, num_updates=19900, lr=1.608e-05, gnorm=1.363, train_wall=54, gb_free=10, wall=12548
+2024-01-07 10:49:24 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 10:49:24 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:49:24 | INFO | valid | epoch 022 | valid on 'valid' subset | loss 5.523 | nll_loss 1.6 | ppl 3.03 | wps 4122.8 | wpb 574.5 | bsz 68 | num_updates 19954 | best_loss 5.514
+2024-01-07 10:49:24 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 22 @ 19954 updates
+2024-01-07 10:49:24 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5233.pt
+2024-01-07 10:49:42 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5233.pt
+2024-01-07 10:50:21 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5233.pt (epoch 22 @ 19954 updates, score 5.523) (writing took 56.70821028097998 seconds)
+2024-01-07 10:50:22 | INFO | fairseq_cli.train | end of epoch 22 (average epoch stats below)
+2024-01-07 10:50:22 | INFO | train | epoch 022 | loss 5.244 | nll_loss 1.341 | ppl 2.53 | wps 2788.3 | ups 1.66 | wpb 1683.8 | bsz 111.2 | num_updates 19954 | lr 1.60368e-05 | gnorm 1.378 | train_wall 487 | gb_free 12.5 | wall 12635
+2024-01-07 10:50:22 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:50:22 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 10:50:22 | INFO | fairseq.trainer | begin training epoch 23
+2024-01-07 10:50:22 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 10:50:46 | INFO | train_inner | epoch 023:     46 / 907 loss=5.23, nll_loss=1.327, ppl=2.51, wps=1513.5, ups=0.9, wpb=1686.9, bsz=112.7, num_updates=20000, lr=1.6e-05, gnorm=1.348, train_wall=53, gb_free=9.9, wall=12660
+2024-01-07 10:51:40 | INFO | train_inner | epoch 023:    146 / 907 loss=5.203, nll_loss=1.287, ppl=2.44, wps=3124, ups=1.87, wpb=1667.8, bsz=113.5, num_updates=20100, lr=1.592e-05, gnorm=1.361, train_wall=53, gb_free=10.2, wall=12713
+2024-01-07 10:52:33 | INFO | train_inner | epoch 023:    246 / 907 loss=5.233, nll_loss=1.325, ppl=2.51, wps=3088.4, ups=1.87, wpb=1653.4, bsz=104.8, num_updates=20200, lr=1.584e-05, gnorm=1.433, train_wall=53, gb_free=10.9, wall=12767
+2024-01-07 10:53:27 | INFO | train_inner | epoch 023:    346 / 907 loss=5.219, nll_loss=1.31, ppl=2.48, wps=3154, ups=1.84, wpb=1711.6, bsz=116.6, num_updates=20300, lr=1.576e-05, gnorm=1.373, train_wall=54, gb_free=11, wall=12821
+2024-01-07 10:54:22 | INFO | train_inner | epoch 023:    446 / 907 loss=5.231, nll_loss=1.327, ppl=2.51, wps=3131.8, ups=1.84, wpb=1702.9, bsz=111.8, num_updates=20400, lr=1.568e-05, gnorm=1.318, train_wall=54, gb_free=9.9, wall=12875
+2024-01-07 10:55:15 | INFO | train_inner | epoch 023:    546 / 907 loss=5.232, nll_loss=1.327, ppl=2.51, wps=3134.2, ups=1.87, wpb=1676.7, bsz=109.7, num_updates=20500, lr=1.56e-05, gnorm=1.365, train_wall=53, gb_free=11, wall=12929
+2024-01-07 10:56:09 | INFO | train_inner | epoch 023:    646 / 907 loss=5.222, nll_loss=1.316, ppl=2.49, wps=3131.6, ups=1.85, wpb=1690.4, bsz=112.7, num_updates=20600, lr=1.552e-05, gnorm=1.34, train_wall=54, gb_free=10.4, wall=12983
+2024-01-07 10:57:03 | INFO | train_inner | epoch 023:    746 / 907 loss=5.251, nll_loss=1.352, ppl=2.55, wps=3154.7, ups=1.85, wpb=1701.4, bsz=110.3, num_updates=20700, lr=1.544e-05, gnorm=1.375, train_wall=54, gb_free=10.3, wall=13037
+2024-01-07 10:57:57 | INFO | train_inner | epoch 023:    846 / 907 loss=5.231, nll_loss=1.325, ppl=2.51, wps=3130.7, ups=1.86, wpb=1680.1, bsz=108.6, num_updates=20800, lr=1.536e-05, gnorm=1.376, train_wall=53, gb_free=10.1, wall=13090
+2024-01-07 10:58:29 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 10:58:29 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 10:58:30 | INFO | valid | epoch 023 | valid on 'valid' subset | loss 5.506 | nll_loss 1.613 | ppl 3.06 | wps 4113.6 | wpb 574.5 | bsz 68 | num_updates 20861 | best_loss 5.506
+2024-01-07 10:58:30 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 23 @ 20861 updates
+2024-01-07 10:58:30 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 10:59:08 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt
+2024-01-07 11:01:04 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint_best.pt (epoch 23 @ 20861 updates, score 5.506) (writing took 154.41690281702904 seconds)
+2024-01-07 11:01:04 | INFO | fairseq_cli.train | end of epoch 23 (average epoch stats below)
+2024-01-07 11:01:04 | INFO | train | epoch 023 | loss 5.226 | nll_loss 1.319 | ppl 2.5 | wps 2377.2 | ups 1.41 | wpb 1683.8 | bsz 111.2 | num_updates 20861 | lr 1.53112e-05 | gnorm 1.373 | train_wall 485 | gb_free 12.3 | wall 13278
+2024-01-07 11:01:04 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 11:01:04 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 11:01:04 | INFO | fairseq.trainer | begin training epoch 24
+2024-01-07 11:01:04 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 11:01:25 | INFO | train_inner | epoch 024:     39 / 907 loss=5.193, nll_loss=1.279, ppl=2.43, wps=800.8, ups=0.48, wpb=1665.1, bsz=111.9, num_updates=20900, lr=1.528e-05, gnorm=1.408, train_wall=53, gb_free=11, wall=13298
+2024-01-07 11:02:18 | INFO | train_inner | epoch 024:    139 / 907 loss=5.22, nll_loss=1.309, ppl=2.48, wps=3137, ups=1.89, wpb=1655.8, bsz=108.9, num_updates=21000, lr=1.52e-05, gnorm=1.393, train_wall=52, gb_free=11, wall=13351
+2024-01-07 11:03:11 | INFO | train_inner | epoch 024:    239 / 907 loss=5.204, nll_loss=1.291, ppl=2.45, wps=3158.9, ups=1.87, wpb=1688.5, bsz=111.8, num_updates=21100, lr=1.512e-05, gnorm=1.366, train_wall=53, gb_free=10.9, wall=13405
+2024-01-07 11:04:05 | INFO | train_inner | epoch 024:    339 / 907 loss=5.207, nll_loss=1.296, ppl=2.46, wps=3125.5, ups=1.85, wpb=1687.7, bsz=111.6, num_updates=21200, lr=1.504e-05, gnorm=1.425, train_wall=54, gb_free=10.9, wall=13459
+2024-01-07 11:04:59 | INFO | train_inner | epoch 024:    439 / 907 loss=5.217, nll_loss=1.308, ppl=2.48, wps=3134.1, ups=1.84, wpb=1700.1, bsz=110.3, num_updates=21300, lr=1.496e-05, gnorm=1.356, train_wall=54, gb_free=10.6, wall=13513
+2024-01-07 11:05:54 | INFO | train_inner | epoch 024:    539 / 907 loss=5.196, nll_loss=1.284, ppl=2.44, wps=3127.1, ups=1.83, wpb=1709.4, bsz=116.3, num_updates=21400, lr=1.488e-05, gnorm=1.331, train_wall=54, gb_free=10.7, wall=13567
+2024-01-07 11:06:48 | INFO | train_inner | epoch 024:    639 / 907 loss=5.215, nll_loss=1.305, ppl=2.47, wps=3102.1, ups=1.85, wpb=1678.9, bsz=109.2, num_updates=21500, lr=1.48e-05, gnorm=1.354, train_wall=54, gb_free=10.6, wall=13622
+2024-01-07 11:07:42 | INFO | train_inner | epoch 024:    739 / 907 loss=5.208, nll_loss=1.297, ppl=2.46, wps=3105.1, ups=1.85, wpb=1676.8, bsz=108.9, num_updates=21600, lr=1.472e-05, gnorm=1.333, train_wall=54, gb_free=9.8, wall=13676
+2024-01-07 11:08:36 | INFO | train_inner | epoch 024:    839 / 907 loss=5.195, nll_loss=1.283, ppl=2.43, wps=3101, ups=1.84, wpb=1682.1, bsz=113.7, num_updates=21700, lr=1.464e-05, gnorm=1.339, train_wall=54, gb_free=10, wall=13730
+2024-01-07 11:09:13 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 11:09:13 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 11:09:13 | INFO | valid | epoch 024 | valid on 'valid' subset | loss 5.523 | nll_loss 1.624 | ppl 3.08 | wps 4110.8 | wpb 574.5 | bsz 68 | num_updates 21768 | best_loss 5.506
+2024-01-07 11:09:13 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 24 @ 21768 updates
+2024-01-07 11:09:13 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5230.pt
+2024-01-07 11:09:38 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5230.pt
+2024-01-07 11:10:06 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5230.pt (epoch 24 @ 21768 updates, score 5.523) (writing took 52.240165185998194 seconds)
+2024-01-07 11:10:06 | INFO | fairseq_cli.train | end of epoch 24 (average epoch stats below)
+2024-01-07 11:10:06 | INFO | train | epoch 024 | loss 5.207 | nll_loss 1.296 | ppl 2.46 | wps 2817.7 | ups 1.67 | wpb 1683.8 | bsz 111.2 | num_updates 21768 | lr 1.45856e-05 | gnorm 1.359 | train_wall 486 | gb_free 12.4 | wall 13820
+2024-01-07 11:10:06 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 11:10:06 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 11:10:06 | INFO | fairseq.trainer | begin training epoch 25
+2024-01-07 11:10:06 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 11:10:23 | INFO | train_inner | epoch 025:     32 / 907 loss=5.205, nll_loss=1.296, ppl=2.45, wps=1576.5, ups=0.93, wpb=1688.5, bsz=110.4, num_updates=21800, lr=1.456e-05, gnorm=1.332, train_wall=53, gb_free=10.2, wall=13837
+2024-01-07 11:11:17 | INFO | train_inner | epoch 025:    132 / 907 loss=5.176, nll_loss=1.257, ppl=2.39, wps=3156.1, ups=1.86, wpb=1694, bsz=110.1, num_updates=21900, lr=1.448e-05, gnorm=1.332, train_wall=53, gb_free=10, wall=13891
+2024-01-07 11:12:11 | INFO | train_inner | epoch 025:    232 / 907 loss=5.175, nll_loss=1.255, ppl=2.39, wps=3166.5, ups=1.84, wpb=1718.8, bsz=112.7, num_updates=22000, lr=1.44e-05, gnorm=1.312, train_wall=54, gb_free=10.9, wall=13945
+2024-01-07 11:13:05 | INFO | train_inner | epoch 025:    332 / 907 loss=5.182, nll_loss=1.265, ppl=2.4, wps=3109.3, ups=1.85, wpb=1678.6, bsz=111.3, num_updates=22100, lr=1.432e-05, gnorm=1.389, train_wall=54, gb_free=10, wall=13999
+2024-01-07 11:13:59 | INFO | train_inner | epoch 025:    432 / 907 loss=5.174, nll_loss=1.257, ppl=2.39, wps=3114.8, ups=1.85, wpb=1680.3, bsz=112.5, num_updates=22200, lr=1.424e-05, gnorm=1.343, train_wall=54, gb_free=10.4, wall=14053
+2024-01-07 11:14:53 | INFO | train_inner | epoch 025:    532 / 907 loss=5.179, nll_loss=1.262, ppl=2.4, wps=3132.4, ups=1.86, wpb=1684.7, bsz=112.1, num_updates=22300, lr=1.416e-05, gnorm=1.353, train_wall=53, gb_free=10.3, wall=14107
+2024-01-07 11:15:47 | INFO | train_inner | epoch 025:    632 / 907 loss=5.206, nll_loss=1.294, ppl=2.45, wps=3133.8, ups=1.86, wpb=1689, bsz=108.8, num_updates=22400, lr=1.408e-05, gnorm=1.404, train_wall=54, gb_free=10.5, wall=14160
+2024-01-07 11:16:40 | INFO | train_inner | epoch 025:    732 / 907 loss=5.188, nll_loss=1.272, ppl=2.41, wps=3068.8, ups=1.89, wpb=1625.8, bsz=105, num_updates=22500, lr=1.4e-05, gnorm=1.389, train_wall=53, gb_free=11, wall=14213
+2024-01-07 11:17:34 | INFO | train_inner | epoch 025:    832 / 907 loss=5.208, nll_loss=1.302, ppl=2.47, wps=3151.9, ups=1.86, wpb=1696.5, bsz=117.8, num_updates=22600, lr=1.392e-05, gnorm=1.378, train_wall=54, gb_free=10.8, wall=14267
+2024-01-07 11:18:14 | INFO | fairseq_cli.train | begin validation on "valid" subset
+2024-01-07 11:18:14 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 11:18:14 | INFO | valid | epoch 025 | valid on 'valid' subset | loss 5.51 | nll_loss 1.608 | ppl 3.05 | wps 4184.7 | wpb 574.5 | bsz 68 | num_updates 22675 | best_loss 5.506
+2024-01-07 11:18:14 | INFO | fairseq.checkpoint_utils | Preparing to save checkpoint for epoch 25 @ 22675 updates
+2024-01-07 11:18:14 | INFO | fairseq.trainer | Saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5100.pt
+2024-01-07 11:18:31 | INFO | fairseq.trainer | Finished saving checkpoint to /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5100.pt
+2024-01-07 11:18:59 | INFO | fairseq.checkpoint_utils | Saved checkpoint /home2/chu/fairseq_sign/sign/experiments/mt/de-en/sp-10/checkpoint.best_loss_5.5100.pt (epoch 25 @ 22675 updates, score 5.51) (writing took 44.655450090998784 seconds)
+2024-01-07 11:18:59 | INFO | fairseq_cli.train | end of epoch 25 (average epoch stats below)
+2024-01-07 11:18:59 | INFO | train | epoch 025 | loss 5.188 | nll_loss 1.274 | ppl 2.42 | wps 2867.9 | ups 1.7 | wpb 1683.8 | bsz 111.2 | num_updates 22675 | lr 1.386e-05 | gnorm 1.378 | train_wall 485 | gb_free 12.6 | wall 14352
+2024-01-07 11:18:59 | INFO | fairseq.tasks.fairseq_task | can_reuse_epoch_itr = True
+2024-01-07 11:18:59 | INFO | fairseq.data.iterators | grouped total_num_itrs = 907
+2024-01-07 11:18:59 | INFO | fairseq.trainer | begin training epoch 26
+2024-01-07 11:18:59 | INFO | fairseq_cli.train | Start iterating over samples
+2024-01-07 11:19:12 | INFO | train_inner | epoch 026:     25 / 907 loss=5.207, nll_loss=1.297, ppl=2.46, wps=1707.3, ups=1.02, wpb=1679.9, bsz=108.6, num_updates=22700, lr=1.384e-05, gnorm=1.515, train_wall=53, gb_free=10.3, wall=14366
+2024-01-07 11:20:05 | INFO | train_inner | epoch 026:    125 / 907 loss=5.151, nll_loss=1.228, ppl=2.34, wps=3178, ups=1.88, wpb=1692.2, bsz=117.3, num_updates=22800, lr=1.376e-05, gnorm=1.296, train_wall=53, gb_free=10.8, wall=14419
+2024-01-07 11:20:59 | INFO | train_inner | epoch 026:    225 / 907 loss=5.183, nll_loss=1.264, ppl=2.4, wps=3132.8, ups=1.87, wpb=1675.6, bsz=105.1, num_updates=22900, lr=1.368e-05, gnorm=1.374, train_wall=53, gb_free=10.1, wall=14472
+2024-01-07 11:21:53 | INFO | train_inner | epoch 026:    325 / 907 loss=5.175, nll_loss=1.258, ppl=2.39, wps=3141.7, ups=1.85, wpb=1699.2, bsz=113.8, num_updates=23000, lr=1.36e-05, gnorm=1.342, train_wall=54, gb_free=9.7, wall=14526

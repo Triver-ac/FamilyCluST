@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=2 python /home2/chu/fairseq_sign/sign/generate.py /home2/chu/fairseq_sign/sign/dataset/sp-10/256x256 \
+    --use-src-lang-id \
+    --src-langs lt \
+    --tgt-langs en \
+    --config-yaml config-wiki-all.yaml \
+    --task sign_text_joint_to_text \
+    --post-process \
+    --gen-subset dev_joint \
+    --remove-bpe \
+    --batch-size 1 \
+    --beam 5 \
+    --lenpen 1 \
+    --langs zh,uk,ru,bg,is,de,it,sv,lt,en \
+    --path /home2/chu/fairseq_sign/sign/experiments/sp-10/multilingual/many2one/sign-uk,ru-en/checkpoint_best.pt \
+    --scoring sacrebleu > /home2/chu/fairseq_sign/sign/experiments/sp-10/multilingual/many2one/sign-uk,ru-en/lt_dev.log 2>&1

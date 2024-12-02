@@ -1,0 +1,681 @@
+S-108	▁Es ▁ist ▁teu er . [de_DE]
+T-108	▁It ' s ▁expensive .
+H-108	-0.3223816156387329	▁It ▁is ▁expensive .
+D-108	-0.3223816156387329	▁It ▁is ▁expensive .
+P-108	-0.2380 -0.3132 -0.5022 -0.3269 -0.2878 -0.2662
+S-125	▁Du ▁bist ▁blas s . [de_DE]
+T-125	▁You ▁look ▁pale .
+H-125	-0.8535390496253967	▁You ▁are ▁fat .
+D-125	-0.8535390496253967	▁You ▁are ▁fat .
+P-125	-0.0800 -0.4978 -3.6619 -0.3196 -0.2951 -0.2668
+S-87	▁An s ▁Telefon ▁gehen . [de_DE]
+T-87	▁Answer ▁the ▁phone .
+H-87	-1.0168143510818481	▁Take ▁the ▁telephone .
+D-87	-1.0168143510818481	▁Take ▁the ▁telephone .
+P-87	-4.8141 -0.1872 -0.2305 -0.3179 -0.2924 -0.2588
+S-53	▁Sei ▁mein ▁Scha tz ! [de_DE]
+T-53	▁Be ▁my ▁Valentine .
+H-53	-0.9384959936141968	▁My ▁de ar ▁friends , ▁thank ▁you ▁for ▁your ▁answer .
+D-53	-0.9384959936141968	▁My ▁de ar ▁friends , ▁thank ▁you ▁for ▁your ▁answer .
+P-53	-1.8143 -0.5513 -0.0159 -1.4137 -0.7187 -1.8234 -0.3314 -0.7503 -2.0978 -1.7419 -0.4050 -0.2792 -0.2575
+S-91	▁Hast ▁du ▁ver standen ? [de_DE]
+T-91	▁Did ▁you ▁understand ?
+H-91	-0.676563024520874	▁Have ▁you ▁understood ?
+D-91	-0.676563024520874	▁Have ▁you ▁understood ?
+P-91	-2.0008 -0.3427 -0.4540 -0.7203 -0.2821 -0.2593
+S-97	▁Bis t ▁Du ▁fertig ? [de_DE]
+T-97	▁Are ▁you ▁ready ?
+H-97	-0.5601075887680054	▁Are ▁you ▁finished ?
+D-97	-0.5601075887680054	▁Are ▁you ▁finished ?
+P-97	-0.7130 -0.2041 -1.5916 -0.3026 -0.2995 -0.2498
+S-86	▁für s ▁College ▁pack en [de_DE]
+T-86	▁pack ing ▁for ▁college
+H-86	-1.2432328462600708	▁For ▁college ▁pack ing
+D-86	-1.2432328462600708	▁For ▁college ▁pack ing
+P-86	-4.1765 -0.8651 -0.5436 -1.1997 -0.4694 -0.2052
+S-100	▁Was ▁für ▁eine ▁Vorstellung ! [de_DE]
+T-100	▁What ▁an ▁idea !
+H-100	-0.6383317708969116	▁What ▁a ▁concept !
+D-100	-0.6383317708969116	▁What ▁a ▁concept !
+P-100	-0.6025 -0.7949 -1.5358 -0.3571 -0.2865 -0.2531
+S-64	▁Ich ▁bin ▁mü de [de_DE]
+T-64	▁I ▁feel ▁tired .
+H-64	-0.3654978573322296	▁I ▁am ▁tired .
+D-64	-0.3654978573322296	▁I ▁am ▁tired .
+P-64	-0.2214 -0.7236 -0.1437 -0.5783 -0.2837 -0.2421
+S-50	▁Wir ▁haben ▁Frost . [de_DE]
+T-50	▁The ▁temperature ▁is ▁below ▁zero .
+H-50	-0.6386300325393677	▁We ▁have ▁frost .
+D-50	-0.6386300325393677	▁We ▁have ▁frost .
+P-50	-0.5254 -1.1954 -1.2136 -0.3535 -0.2858 -0.2580
+S-126	▁Er ▁lebt ▁noch . [de_DE]
+T-126	▁He ▁is ▁still ▁ali ve .
+H-126	-0.43214547634124756	▁He ▁is ▁still ▁ali ve .
+D-126	-0.43214547634124756	▁He ▁is ▁still ▁ali ve .
+P-126	-0.2322 -1.8218 -0.1744 -0.3352 -0.0312 -0.2943 -0.2957 -0.2725
+S-16	▁Hast ▁Du ▁Kinder ? [de_DE]
+T-16	▁Do ▁you ▁have ▁any ▁children ?
+H-16	-0.27740004658699036	▁Do ▁you ▁have ▁children ?
+D-16	-0.27740004658699036	▁Do ▁you ▁have ▁children ?
+P-16	-0.6020 -0.2014 -0.1499 -0.1817 -0.2509 -0.3025 -0.2534
+S-71	▁Was ch ▁deine ▁Hände [de_DE]
+T-71	▁Was h ▁your ▁hands .
+H-71	-0.44870561361312866	▁Was h ▁your ▁hands .
+D-71	-0.44870561361312866	▁Was h ▁your ▁hands .
+P-71	-1.6734 -0.1752 -0.1230 -0.1060 -0.5341 -0.2897 -0.2395
+S-67	▁Es ▁ist ▁ok . [de_DE]
+T-67	▁It ▁is ▁OK .
+H-67	-0.5780952572822571	▁That ▁is ▁fine .
+D-67	-0.5780952572822571	▁That ▁is ▁fine .
+P-67	-1.7936 -0.3920 -0.4084 -0.3293 -0.2783 -0.2670
+S-89	▁Bring ▁es ▁her ! [de_DE]
+T-89	▁Bring ▁it ▁here !
+H-89	-1.392663836479187	▁Give ▁it ▁up !
+D-89	-1.392663836479187	▁Give ▁it ▁up !
+P-89	-5.0300 -0.1807 -1.8754 -0.7369 -0.2859 -0.2471
+S-13	▁Das ▁ist ▁fantastisch ! [de_DE]
+T-13	▁This ▁is ▁fantastic !
+H-13	-0.6009175181388855	▁That ▁is ▁fantastic !
+D-13	-0.6009175181388855	▁That ▁is ▁fantastic !
+P-13	-1.2000 -0.3036 -0.9194 -0.6362 -0.2837 -0.2626
+S-95	▁Set z ▁dich ! [de_DE]
+T-95	▁Sit ▁down !
+H-95	-1.2550185918807983	▁Take ▁it !
+D-95	-1.2550185918807983	▁Take ▁it !
+P-95	-2.7480 -2.0885 -0.8547 -0.3095 -0.2744
+S-88	▁car pe ▁die m [de_DE]
+T-88	▁capture ▁the ▁moment
+H-88	-0.6128266453742981	▁Car pe ▁die m
+D-88	-0.6128266453742981	▁Car pe ▁die m
+P-88	-1.4057 -0.1489 -1.2947 -0.1607 -0.4552 -0.2117
+S-90	▁Kom m ▁her ! [de_DE]
+T-90	▁Come ▁here !
+H-90	-1.317520260810852	▁Come ▁here .
+D-90	-1.317520260810852	▁Come ▁here .
+P-90	-2.5494 -2.2820 -1.1699 -0.3161 -0.2702
+S-1	▁Man ▁sieht ▁sich ! [de_DE]
+T-1	▁See ▁you .
+H-1	-0.8585655689239502	▁You ▁see !
+D-1	-0.8585655689239502	▁You ▁see !
+P-1	-2.1750 -0.7921 -0.7913 -0.2869 -0.2474
+S-92	▁Ze ich ne ! [de_DE]
+T-92	▁Dra w !
+H-92	-1.2762082815170288	▁Take ▁a ▁picture .
+D-92	-1.2762082815170288	▁Take ▁a ▁picture .
+P-92	-4.1835 -0.6229 -1.7355 -0.5734 -0.2947 -0.2471
+S-96	▁Über set ze ! [de_DE]
+T-96	▁Trans late !
+H-96	-1.1684463024139404	▁Exc use ▁me .
+D-96	-1.1684463024139404	▁Exc use ▁me .
+P-96	-4.4538 -0.3739 -0.0866 -1.5623 -0.2854 -0.2486
+S-3	▁Nicht s ▁passiert . [de_DE]
+T-3	▁Nothing ▁happens .
+H-3	-0.4958580434322357	▁Nothing ▁is ▁happening .
+D-3	-0.4958580434322357	▁Nothing ▁is ▁happening .
+P-3	-0.0793 -1.6176 -0.3937 -0.3333 -0.2926 -0.2585
+S-19	▁Bis ▁später ! [de_DE]
+T-19	▁I ' ll ▁see ▁you ▁later .
+H-19	-1.390557050704956	▁Up ▁until ▁later !
+D-19	-1.390557050704956	▁Up ▁until ▁later !
+P-19	-5.4007 -0.5471 -0.5474 -1.2823 -0.3147 -0.2512
+S-37	▁CD ▁ein legen [de_DE]
+T-37	▁In sert ▁CD .
+H-37	-1.8168175220489502	▁Open ing ▁your ▁account s
+D-37	-1.8168175220489502	▁Open ing ▁your ▁account s
+P-37	-4.9747 -1.5110 -2.1981 -2.3764 -1.0226 -0.3803 -0.2546
+S-11	▁Ist ▁das ▁wahr [de_DE]
+T-11	▁Is ▁it ▁true ?
+H-11	-0.6276232600212097	▁That ▁is ▁true .
+D-11	-0.6276232600212097	▁That ▁is ▁true .
+P-11	-1.5080 -0.2835 -0.6083 -0.8147 -0.2871 -0.2641
+S-2	▁Ich ▁liebe ▁dich [de_DE]
+T-2	▁I ▁love ▁you .
+H-2	-0.36858659982681274	▁I ▁love ▁you .
+D-2	-0.36858659982681274	▁I ▁love ▁you .
+P-2	-0.3726 -0.1986 -0.3157 -0.7976 -0.2780 -0.2490
+S-93	▁Wie ▁viele ? [de_DE]
+T-93	▁How ▁many ?
+H-93	-0.4644654095172882	▁How ▁many ?
+D-93	-0.4644654095172882	▁How ▁many ?
+P-93	-0.3063 -0.1686 -1.2771 -0.3031 -0.2672
+S-0	▁woh in ▁? [de_DE]
+T-0	▁Where ▁to ?
+H-0	-0.4742416441440582	▁Where ?
+D-0	-0.4742416441440582	▁Where ?
+P-0	-0.0922 -1.2241 -0.3074 -0.2732
+S-94	▁Wie ? [de_DE]
+T-94	▁How ?
+H-94	-0.5728004574775696	▁How ?
+D-94	-0.5728004574775696	▁How ?
+P-94	-0.5808 -1.1369 -0.2967 -0.2767
+S-21	▁Pause ▁machen [de_DE]
+T-21	▁Tak ing ▁time ▁out .
+H-21	-0.9335647225379944	▁Pause
+D-21	-0.9335647225379944	▁Pause
+P-21	-1.1377 -1.3826 -0.2804
+S-20	▁Was ? [de_DE]
+T-20	▁What ?
+H-20	-1.0187526941299438	▁What ▁is ▁the ▁matter ?
+D-20	-1.0187526941299438	▁What ▁is ▁the ▁matter ?
+P-20	-0.4870 -1.6587 -1.5781 -1.8925 -0.9560 -0.2941 -0.2650
+S-65	▁Ich ▁ fühl e ▁mich ▁prima [de_DE]
+T-65	▁I ▁feel ▁wonderful .
+H-65	-0.5823512673377991	▁I ▁feel ▁fine .
+D-65	-0.5823512673377991	▁I ▁feel ▁fine .
+P-65	-0.1055 -0.1773 -2.3331 -0.3607 -0.2777 -0.2398
+S-18	▁Ich ▁muss ▁eine ▁Mail ▁schreiben . [de_DE]
+T-18	▁I ▁need ▁to ▁send ▁an ▁email .
+H-18	-0.48244184255599976	▁I ▁have ▁to ▁write ▁an ▁e - mail .
+D-18	-0.48244184255599976	▁I ▁have ▁to ▁write ▁an ▁e - mail .
+P-18	-0.2516 -1.6730 -0.3446 -0.8031 -0.2678 -0.5957 -0.4832 -0.0163 -0.3114 -0.2857 -0.2744
+S-115	▁Ich ▁habe ▁eine ▁Auto pan ne [de_DE]
+T-115	▁I ▁have ▁a ▁car ▁break down .
+H-115	-0.8152329921722412	▁I ▁have ▁a ▁car ▁tyre .
+D-115	-0.8152329921722412	▁I ▁have ▁a ▁car ▁tyre .
+P-115	-0.2493 -0.3050 -0.3916 -1.0216 -3.5990 -0.4234 -0.2814 -0.2506
+S-44	▁Die ▁Temperatur ▁ist ▁76 ▁Grad . [de_DE]
+T-44	▁The ▁temperature ▁is ▁76 ▁degree s .
+H-44	-0.3462214469909668	▁The ▁temperature ▁is ▁76 ▁degree s .
+D-44	-0.3462214469909668	▁The ▁temperature ▁is ▁76 ▁degree s .
+P-44	-0.9288 -0.3931 -0.3095 -0.0195 -0.1735 -0.2775 -0.4611 -0.2832 -0.2699
+S-59	▁Wo ▁finde ▁ich ▁einen ▁Arzt ? [de_DE]
+T-59	▁Where ▁can ▁I ▁find ▁a ▁doctor ?
+H-59	-0.26429805159568787	▁Where ▁can ▁I ▁find ▁a ▁doctor ?
+D-59	-0.26429805159568787	▁Where ▁can ▁I ▁find ▁a ▁doctor ?
+P-59	-0.0842 -0.6557 -0.2750 -0.1098 -0.2818 -0.1279 -0.2970 -0.2875 -0.2599
+S-7	▁Möchte n ▁Sie ▁ein ▁Bier ? [de_DE]
+T-7	▁Do ▁you ▁want ▁a ▁beer ?
+H-7	-0.4509817659854889	▁Would ▁you ▁like ▁a ▁beer ?
+D-7	-0.4509817659854889	▁Would ▁you ▁like ▁a ▁beer ?
+P-7	-1.2660 -0.2788 -0.1023 -0.7878 -0.2924 -0.3245 -0.2937 -0.2624
+S-51	▁Woh in ▁führt ▁diese ▁Spur ? [de_DE]
+T-51	▁Where ▁does ▁this ▁trail ▁lead ?
+H-51	-1.1141782999038696	▁Where ▁is ▁that ▁trace ?
+D-51	-1.1141782999038696	▁Where ▁is ▁that ▁trace ?
+P-51	-0.9734 -1.1698 -2.0237 -1.6580 -1.4029 -0.2971 -0.2744
+S-141	▁Woh in ▁fährt ▁dieser ▁Zug ? [de_DE]
+T-141	▁Where ▁does ▁this ▁train ▁go ?
+H-141	-0.5166677832603455	▁Where ▁is ▁this ▁train ▁going ?
+D-141	-0.5166677832603455	▁Where ▁is ▁this ▁train ▁going ?
+P-141	-0.3782 -0.9799 -1.3341 -0.0816 -0.0458 -0.7457 -0.2933 -0.2747
+S-32	▁Der ▁Auf zug ▁steckt ▁fest . [de_DE]
+T-32	▁The ▁elevato r ▁is ▁stuck .
+H-32	-0.7258760929107666	▁The ▁lift ▁is ▁stuck .
+D-32	-0.7258760929107666	▁The ▁lift ▁is ▁stuck .
+P-32	-0.2474 -2.6956 -0.3262 -0.9161 -0.3410 -0.2949 -0.2599
+S-61	▁Hast ▁du ▁die ▁Frau ▁gesehen ? [de_DE]
+T-61	▁Did ▁you ▁see ▁the ▁woman ?
+H-61	-0.3676672577857971	▁Have ▁you ▁seen ▁the ▁woman ?
+D-61	-0.3676672577857971	▁Have ▁you ▁seen ▁the ▁woman ?
+P-61	-1.1473 -0.1811 -0.1260 -0.3557 -0.2114 -0.3549 -0.3032 -0.2618
+S-122	▁Das ▁ist ▁mein ▁Sitz platz . [de_DE]
+T-122	▁This ▁is ▁my ▁se at .
+H-122	-0.2896007299423218	▁That ▁is ▁my ▁se at .
+D-122	-0.2896007299423218	▁That ▁is ▁my ▁se at .
+P-122	-0.4113 -0.3948 -0.5209 -0.0372 -0.0736 -0.3215 -0.2978 -0.2597
+S-113	▁Gibt ▁es ▁hier ▁Zeug en ? [de_DE]
+T-113	▁Are ▁there ▁any ▁witness es ?
+H-113	-0.474550724029541	▁Are ▁there ▁any ▁witness es ▁here ?
+D-113	-0.474550724029541	▁Are ▁there ▁any ▁witness es ▁here ?
+P-113	-0.6999 -0.3583 -0.1059 -1.2142 -0.1813 -0.8155 -0.3325 -0.2993 -0.2642
+S-5	▁Da ▁ist ▁ein ▁Unfall ▁passiert . [de_DE]
+T-5	▁There ▁has ▁been ▁an ▁accident .
+H-5	-0.7817915678024292	▁A ▁accident ▁has ▁taken ▁place .
+D-5	-0.7817915678024292	▁A ▁accident ▁has ▁taken ▁place .
+P-5	-1.4066 -0.7310 -0.6848 -2.3745 -0.0588 -0.4460 -0.2898 -0.2629
+S-39	▁Ich ▁bin ▁nur ▁zu ▁Besuch . [de_DE]
+T-39	▁I ▁am ▁just ▁visiting .
+H-39	-0.6907649636268616	▁I ▁am ▁only ▁going ▁to ▁visit ▁them .
+D-39	-0.6907649636268616	▁I ▁am ▁only ▁going ▁to ▁visit ▁them .
+P-39	-0.2314 -0.7018 -0.5633 -2.5047 -0.7573 -0.1776 -1.0813 -0.3126 -0.3063 -0.2713
+S-60	▁Wo ▁tut ▁es ▁we h ? [de_DE]
+T-60	▁Where ▁does ▁it ▁hurt ?
+H-60	-0.34487470984458923	▁Where ▁is ▁it ▁hurt ?
+D-60	-0.34487470984458923	▁Where ▁is ▁it ▁hurt ?
+P-60	-0.5442 -0.4865 -0.0986 -0.3974 -0.3401 -0.2847 -0.2628
+S-45	▁Ich ▁bin ▁An wal t . [de_DE]
+T-45	▁I ▁am ▁a ▁lawyer .
+H-45	-0.42864274978637695	▁I ▁am ▁a ▁lawyer .
+D-45	-0.42864274978637695	▁I ▁am ▁a ▁lawyer .
+P-45	-0.2995 -0.2388 -1.5733 -0.0239 -0.3229 -0.2849 -0.2573
+S-105	▁Rau ch st ▁Du ? [de_DE]
+T-105	▁Do ▁you ▁smo ke ?
+H-105	-0.5216450095176697	▁Do ▁you ▁smo ke ?
+D-105	-0.5216450095176697	▁Do ▁you ▁smo ke ?
+P-105	-1.4970 -0.2315 -0.9233 -0.1355 -0.3220 -0.2878 -0.2545
+S-128	▁Ich ▁musste ▁er brechen . [de_DE]
+T-128	▁I ' ve ▁been ▁vom i ting .
+H-128	-0.5388448238372803	▁I ▁had ▁to ▁break .
+D-128	-0.5388448238372803	▁I ▁had ▁to ▁break .
+P-128	-0.2071 -0.6229 -0.2630 -1.0968 -1.0354 -0.2861 -0.2606
+S-41	▁Welche ▁Religion ▁hast ▁du ? [de_DE]
+T-41	▁Which ▁church ▁do ▁you ▁be long ▁to ?
+H-41	-0.39864954352378845	▁What ▁religion ▁do ▁you ▁have ?
+D-41	-0.39864954352378845	▁What ▁religion ▁do ▁you ▁have ?
+P-41	-0.5601 -0.5048 -0.6110 -0.2971 -0.2839 -0.3753 -0.2921 -0.2650
+S-102	▁Sind ▁Sie ▁in ▁Eile ? [de_DE]
+T-102	▁Are ▁you ▁in ▁a ▁hur ry ?
+H-102	-0.6092253923416138	▁Are ▁you ▁in ▁a ▁hur ry ?
+D-102	-0.6092253923416138	▁Are ▁you ▁in ▁a ▁hur ry ?
+P-102	-0.7679 -0.3603 -1.0148 -1.2993 -0.3290 -0.8677 -0.2801 -0.3020 -0.2620
+S-78	▁Was ▁möchten ▁sie ▁bestellen ? [de_DE]
+T-78	▁What ▁would ▁you ▁like ▁to ▁order ?
+H-78	-0.5180410742759705	▁What ▁do ▁they ▁want ▁to ▁order ?
+D-78	-0.5180410742759705	▁What ▁do ▁they ▁want ▁to ▁order ?
+P-78	-0.8169 -0.9092 -1.1630 -0.3662 -0.3814 -0.1575 -0.3173 -0.2848 -0.2661
+S-23	▁Ich ▁studier e ▁Musik . [de_DE]
+T-23	▁I ▁am ▁major ing ▁in ▁Music .
+H-23	-0.3891320824623108	▁I ▁am ▁major ing ▁in ▁music .
+D-23	-0.3891320824623108	▁I ▁am ▁major ing ▁in ▁music .
+P-23	-0.2038 -0.2157 -0.0403 -0.1031 -0.2120 -1.8552 -0.3290 -0.2865 -0.2564
+S-103	▁Suche n ▁Sie ▁etwas ? [de_DE]
+T-103	▁Are ▁you ▁looking ▁for ▁anything ?
+H-103	-0.5680747032165527	▁Do ▁you ▁want ▁anything ?
+D-103	-0.5680747032165527	▁Do ▁you ▁want ▁anything ?
+P-103	-1.2305 -0.2430 -1.0801 -0.4373 -0.4239 -0.2925 -0.2692
+S-106	▁Ich ▁sollte ▁jetzt ▁gehen . [de_DE]
+T-106	▁I ▁should ▁be ▁off ▁now .
+H-106	-0.729016125202179	▁I ▁should ▁be ▁leaving ▁now .
+D-106	-0.729016125202179	▁I ▁should ▁be ▁leaving ▁now .
+P-106	-0.1845 -0.3126 -3.2157 -0.9835 -0.2563 -0.3204 -0.2859 -0.2732
+S-130	▁Kann ▁ich ▁auch ▁spielen ? [de_DE]
+T-130	▁Can ▁I ▁play , ▁too ?
+H-130	-0.5665162801742554	▁Can ▁I ▁play ▁too ?
+D-130	-0.5665162801742554	▁Can ▁I ▁play ▁too ?
+P-130	-0.6733 -0.2935 -0.5891 -1.5109 -0.3498 -0.2842 -0.2648
+S-101	▁Er ▁hat ▁Kopf schmerz en [de_DE]
+T-101	▁He ▁has ▁a ▁head ache .
+H-101	-0.5517009496688843	▁He ▁has ▁a ▁head ache .
+D-101	-0.5517009496688843	▁He ▁has ▁a ▁head ache .
+P-101	-0.2016 -1.6653 -0.5576 -0.9580 -0.0508 -0.4530 -0.2883 -0.2390
+S-111	▁Welche ▁Ausbildung ▁haben ▁Sie ? [de_DE]
+T-111	▁What ' s ▁your ▁education ?
+H-111	-0.48697784543037415	▁What ▁training ▁do ▁you ▁have ?
+D-111	-0.48697784543037415	▁What ▁training ▁do ▁you ▁have ?
+P-111	-0.1847 -1.1342 -0.8871 -0.2861 -0.3802 -0.4657 -0.2940 -0.2638
+S-127	▁Ich ▁habe ▁Aus schlag . [de_DE]
+T-127	▁I ▁have ▁a ▁ rash .
+H-127	-0.7280720472335815	▁I ▁have ▁a ▁suggestion .
+D-127	-0.7280720472335815	▁I ▁have ▁a ▁suggestion .
+P-127	-0.4240 -1.2556 -0.7600 -1.8230 -0.2990 -0.2796 -0.2553
+S-47	▁Was ▁sind ▁die ▁Vorteile ? [de_DE]
+T-47	▁What ▁are ▁the ▁benefits ?
+H-47	-0.399432510137558	▁What ▁are ▁the ▁advantage s ?
+D-47	-0.399432510137558	▁What ▁are ▁the ▁advantage s ?
+P-47	-0.3876 -0.3949 -0.2856 -0.7810 -0.2994 -0.4856 -0.2969 -0.2646
+S-4	▁Wann ▁treffen ▁wir ▁uns ? [de_DE]
+T-4	▁When ▁will ▁we ▁meet ?
+H-4	-0.48669296503067017	▁When ▁will ▁we ▁meet ?
+D-4	-0.48669296503067017	▁When ▁will ▁we ▁meet ?
+P-4	-0.2207 -1.9791 -0.2373 -0.1402 -0.2844 -0.2899 -0.2552
+S-73	▁Wie ▁ist ▁deine ▁Adresse ? [de_DE]
+T-73	▁What ▁is ▁your ▁address ?
+H-73	-0.3838546872138977	▁What ' s ▁your ▁address ?
+D-73	-0.3838546872138977	▁What ' s ▁your ▁address ?
+P-73	-0.9018 -0.6983 -0.2441 -0.1728 -0.0881 -0.3821 -0.3102 -0.2734
+S-54	▁Ruf ▁den ▁Kranken wagen ! [de_DE]
+T-54	▁Call ▁the ▁ambula nce .
+H-54	-0.9574615359306335	▁Talk ▁to ▁the ▁ambula nce .
+D-54	-0.9574615359306335	▁Talk ▁to ▁the ▁ambula nce .
+P-54	-5.3933 -0.1148 -0.4258 -0.2964 -0.0536 -0.8222 -0.2913 -0.2622
+S-136	▁Im ▁Winter ▁gehe ▁ich ▁Ski ▁fahren . [de_DE]
+T-136	▁In ▁winter ▁I ▁go ▁ski ing .
+H-136	-0.6152797341346741	▁I ▁go ▁ski ing ▁in ▁winter .
+D-136	-0.6152797341346741	▁I ▁go ▁ski ing ▁in ▁winter .
+P-136	-0.8127 -1.5954 -1.5062 -0.0563 -0.3309 -0.4068 -0.3011 -0.2800 -0.2482
+S-43	▁6 0000 ▁Einwohner ▁leben ▁in ▁meiner ▁Stadt [de_DE]
+T-43	▁Six ty ▁thousand ▁people ▁live ▁in ▁my ▁city .
+H-43	-0.4981767535209656	▁6 ▁000 ▁people ▁live ▁in ▁my ▁city .
+D-43	-0.4981767535209656	▁6 ▁000 ▁people ▁live ▁in ▁my ▁city .
+P-43	-0.2126 -1.0580 -0.8941 -0.6224 -0.2509 -0.1908 -0.4316 -0.8167 -0.2849 -0.2197
+S-42	▁Das ▁kann ▁ich ▁nicht ▁alles ▁essen . [de_DE]
+T-42	▁I ▁can ' t ▁eat ▁the ▁whole ▁thing .
+H-42	-0.5005845427513123	▁I ▁cannot ▁eat ▁everything .
+D-42	-0.5005845427513123	▁I ▁cannot ▁eat ▁everything .
+P-42	-0.5766 -0.6091 -0.1841 -0.8980 -0.6808 -0.2866 -0.2689
+S-138	▁Manchmal ▁gehe ▁ich ▁Baby s itten . [de_DE]
+T-138	▁Now ▁and ▁then ▁I ▁do ▁baby si tting .
+H-138	-0.8067309856414795	▁Sometimes ▁I ▁take ▁care ▁of ▁babi es .
+D-138	-0.8067309856414795	▁Sometimes ▁I ▁take ▁care ▁of ▁babi es .
+P-138	-0.4272 -0.2362 -2.2610 -1.3698 -0.2636 -2.5923 -0.0549 -0.3135 -0.2924 -0.2563
+S-27	▁Der ▁Lehrer ▁stellt ▁mir ▁viele ▁Fragen . [de_DE]
+T-27	▁The ▁teacher ▁asked ▁me ▁a ▁lot ▁of ▁questions .
+H-27	-0.5117916464805603	▁The ▁teacher ▁put s ▁me ▁many ▁questions .
+D-27	-0.5117916464805603	▁The ▁teacher ▁put s ▁me ▁many ▁questions .
+P-27	-0.5679 -0.9373 -1.1992 -0.5089 -0.3215 -0.6180 -0.1310 -0.2898 -0.2855 -0.2588
+S-107	▁Das ▁ist ▁sehr ▁nett ▁von ▁dir . [de_DE]
+T-107	▁It ' s ▁very ▁nice ▁of ▁you .
+H-107	-0.690916895866394	▁That ▁is ▁very ▁nice ▁of ▁you .
+D-107	-0.690916895866394	▁That ▁is ▁very ▁nice ▁of ▁you .
+P-107	-1.3309 -0.4110 -1.3569 -1.1750 -0.6884 -0.3719 -0.3266 -0.2887 -0.2689
+S-77	▁Welche ▁Tages supp e ▁gibt ▁es ? [de_DE]
+T-77	▁What ▁is ▁the ▁soup ▁of ▁the ▁day ?
+H-77	-1.23587167263031	▁What ' s ▁the ▁day ' s supp ?
+D-77	-1.23587167263031	▁What ' s ▁the ▁day ' s supp ?
+P-77	-0.3488 -2.2962 -0.3489 -0.6902 -3.6447 -3.0181 -0.7201 -0.2122 -1.7569 -0.2962 -0.2622
+S-74	▁De in ▁Vater ▁sieht ▁gut ▁aus . [de_DE]
+T-74	▁Your ▁father ▁is ▁nice - look ing .
+H-74	-0.38648951053619385	▁Your ▁father ▁looks ▁good .
+D-74	-0.38648951053619385	▁Your ▁father ▁looks ▁good .
+P-74	-0.5701 -0.0901 -0.2205 -0.9524 -0.3296 -0.2800 -0.2628
+S-38	▁Bis t ▁du ▁get auf t ? [de_DE]
+T-38	▁Have ▁you ▁been ▁ba pt ized ?
+H-38	-0.855239987373352	▁Have ▁you ▁been ▁born ?
+D-38	-0.855239987373352	▁Have ▁you ▁been ▁born ?
+P-38	-1.7719 -0.1846 -1.7436 -1.4883 -0.2445 -0.3051 -0.2487
+S-46	▁Ich ▁möchte ▁ihren ▁Job ▁nicht ▁haben . [de_DE]
+T-46	▁I ▁would ▁not ▁want ▁her ▁job .
+H-46	-0.5890558362007141	▁I ▁do ▁not ▁want ▁their ▁job .
+D-46	-0.5890558362007141	▁I ▁do ▁not ▁want ▁their ▁job .
+P-46	-0.2164 -0.6901 -0.1571 -0.3198 -2.7323 -0.3078 -0.3105 -0.2977 -0.2697
+S-70	▁Sie ▁und ▁ich ▁haben ▁das ▁diskutiert . [de_DE]
+T-70	▁She ▁and ▁I ▁discuss ed ▁it .
+H-70	-0.5811070203781128	▁You ▁and ▁I ▁have ▁discuss ed ▁this .
+D-70	-0.5811070203781128	▁You ▁and ▁I ▁have ▁discuss ed ▁this .
+P-70	-1.7585 -0.3391 -0.2385 -0.6310 -0.6173 -0.2867 -0.9941 -0.3774 -0.2991 -0.2695
+S-80	▁Möchte n ▁Sie ▁ein ▁größere s ? [de_DE]
+T-80	▁Would ▁you ▁like ▁to ▁up size ?
+H-80	-0.7629324793815613	▁Do ▁you ▁want ▁something ▁more ?
+D-80	-0.7629324793815613	▁Do ▁you ▁want ▁something ▁more ?
+P-80	-1.7745 -0.2382 -0.4740 -1.0754 -1.5914 -0.3813 -0.2930 -0.2758
+S-110	▁Was ▁kann ▁ich ▁für ▁Sie ▁tun ? [de_DE]
+T-110	▁What ▁can ▁l ▁do ▁for ▁you ?
+H-110	-0.2823632061481476	▁What ▁can ▁I ▁do ▁for ▁you ?
+D-110	-0.2823632061481476	▁What ▁can ▁I ▁do ▁for ▁you ?
+P-110	-0.4459 -0.3111 -0.3205 -0.1257 -0.2618 -0.3005 -0.2204 -0.2855 -0.2699
+S-17	▁Mag st ▁du ▁fer n sehen ? [de_DE]
+T-17	▁Do ▁you ▁like ▁to ▁watch ▁TV ?
+H-17	-0.6932682394981384	▁Do ▁you ▁like ▁watching ▁television ?
+D-17	-0.6932682394981384	▁Do ▁you ▁like ▁watching ▁television ?
+P-17	-1.4279 -0.2309 -1.2916 -1.5063 -0.2413 -0.3000 -0.2779 -0.2702
+S-109	▁Vielen ▁Dank ▁für ▁den ▁schönen ▁Abend ! [de_DE]
+T-109	▁Thank ▁you ▁for ▁the ▁pleasant ▁evening .
+H-109	-0.6331145763397217	▁Thank ▁you ▁for ▁a ▁very ▁good ▁evening .
+D-109	-0.6331145763397217	▁Thank ▁you ▁for ▁a ▁very ▁good ▁evening .
+P-109	-0.3698 -0.2244 -0.7467 -1.6984 -0.6569 -1.6415 -0.0756 -0.3690 -0.2885 -0.2604
+S-112	▁Wie ▁viel ▁wird ▁die ▁Reparatur ▁kosten ? [de_DE]
+T-112	▁How ▁much ▁will ▁the ▁repair ▁cost ?
+H-112	-0.2894252836704254	▁How ▁much ▁will ▁the ▁repair ▁cost ?
+D-112	-0.2894252836704254	▁How ▁much ▁will ▁the ▁repair ▁cost ?
+P-112	-0.3579 -0.0622 -0.2863 -0.5252 -0.1259 -0.3669 -0.3117 -0.3013 -0.2674
+S-98	▁Ich ▁glaube , ▁da ▁passiert ▁etwas . [de_DE]
+T-98	▁I ▁suspect ▁that ▁something ▁is ▁happening .
+H-98	-0.8474649786949158	▁I ▁think ▁there ▁is ▁something ▁going ▁on .
+D-98	-0.8474649786949158	▁I ▁think ▁there ▁is ▁something ▁going ▁on .
+P-98	-0.6540 -1.1280 -1.7603 -0.2752 -0.9637 -0.9932 -0.8525 -1.2852 -0.2923 -0.2703
+S-114	▁Wie ▁lange ▁müssen ▁wir ▁dort ▁warten ? [de_DE]
+T-114	▁How ▁long ▁must ▁we ▁wait ▁there ?
+H-114	-0.43358859419822693	▁How ▁long ▁do ▁we ▁have ▁to ▁wait ▁there ?
+D-114	-0.43358859419822693	▁How ▁long ▁do ▁we ▁have ▁to ▁wait ▁there ?
+P-114	-0.3435 -0.3649 -1.8631 -0.2854 -0.2870 -0.1320 -0.0961 -0.3940 -0.4351 -0.3012 -0.2671
+S-36	▁Ich ▁such e ▁eine ▁neue ▁Arbeit . [de_DE]
+T-36	▁I ▁am ▁doing ▁an ▁employment ▁search .
+H-36	-0.46016791462898254	▁I ▁am ▁looking ▁for ▁a ▁new ▁job .
+D-36	-0.46016791462898254	▁I ▁am ▁looking ▁for ▁a ▁new ▁job .
+P-36	-0.1704 -1.1993 -0.0414 -0.4663 -1.0381 -0.2522 -0.5721 -0.3140 -0.2856 -0.2622
+S-85	▁Das ▁ist ▁ein ▁nett es ▁Tier . [de_DE]
+T-85	▁That ' s ▁a ▁pretty ▁animal .
+H-85	-0.541027843952179	▁It ▁is ▁a ▁nice ▁animal .
+D-85	-0.541027843952179	▁It ▁is ▁a ▁nice ▁animal .
+P-85	-1.1949 -0.3845 -0.3842 -0.3686 -1.1097 -0.3345 -0.2864 -0.2653
+S-33	▁Wo ▁ist ▁die ▁U - Bahn ? [de_DE]
+T-33	▁Where ▁is ▁the ▁sub way ?
+H-33	-0.6510676741600037	▁Where ▁is ▁the ▁metro ?
+D-33	-0.6510676741600037	▁Where ▁is ▁the ▁metro ?
+P-33	-0.0834 -0.3290 -0.2377 -3.1177 -0.2289 -0.2960 -0.2648
+S-52	▁Es ▁kostet ▁weniger ▁als ▁5 ▁Dollar . [de_DE]
+T-52	▁It ▁is ▁under ▁five ▁dollars .
+H-52	-0.5102891325950623	▁It ▁costs ▁less ▁than ▁five ▁dollars .
+D-52	-0.5102891325950623	▁It ▁costs ▁less ▁than ▁five ▁dollars .
+P-52	-0.2487 -1.7367 -0.1559 -0.3022 -1.0681 -0.1887 -0.3451 -0.2935 -0.2538
+S-28	▁Wo ▁ist ▁das ▁Verwaltung s gebäude ? [de_DE]
+T-28	▁Where ▁is ▁the ▁Administration ▁building ?
+H-28	-0.34526169300079346	▁Where ▁is ▁the ▁administrative ▁building ?
+D-28	-0.34526169300079346	▁Where ▁is ▁the ▁administrative ▁building ?
+P-28	-0.1822 -0.3256 -0.2797 -0.8009 -0.2509 -0.3719 -0.2885 -0.2624
+S-118	▁Ich ▁bin ▁ arbeit s los . [de_DE]
+T-118	▁I ' m ▁un employed .
+H-118	-0.26810362935066223	▁I ▁am ▁un employed .
+D-118	-0.26810362935066223	▁I ▁am ▁un employed .
+P-118	-0.3371 -0.3723 -0.1879 -0.0814 -0.3417 -0.2931 -0.2633
+S-56	▁Ich ▁habe ▁eine ▁Er käl tung . [de_DE]
+T-56	▁I ▁have ▁a ▁cold .
+H-56	-0.4999252259731293	▁I ▁have ▁a ▁cold .
+D-56	-0.4999252259731293	▁I ▁have ▁a ▁cold .
+P-56	-0.2387 -1.1324 -0.8225 -0.4391 -0.3173 -0.2888 -0.2606
+S-139	▁Sie ▁trei bt ▁viel ▁Sport . [de_DE]
+T-139	▁She ▁does ▁a ▁lot ▁of ▁sports .
+H-139	-0.9406737089157104	▁She ▁exercise s ▁a ▁great ▁deal .
+D-139	-0.9406737089157104	▁She ▁exercise s ▁a ▁great ▁deal .
+P-139	-2.1403 -3.6810 -0.3388 -0.3821 -0.6958 -0.0384 -0.6522 -0.2823 -0.2552
+S-10	▁Waren ▁sie ▁beim ▁Frauen arzt ? [de_DE]
+T-10	▁Have ▁you ▁been ▁to ▁the ▁gyn eco logist ?
+H-10	-0.8099809288978577	▁Have ▁you ▁been ▁to ▁the ▁doctor ?
+D-10	-0.8099809288978577	▁Have ▁you ▁been ▁to ▁the ▁doctor ?
+P-10	-1.2761 -0.9184 -1.9575 -0.2154 -0.5178 -1.3669 -0.4789 -0.3042 -0.2547
+S-15	▁Ich ▁such e ▁ein ▁Zimmer . [de_DE]
+T-15	▁I ' m ▁looking ▁for ▁a ▁room .
+H-15	-0.4920044243335724	▁I ▁want ▁a ▁room .
+D-15	-0.4920044243335724	▁I ▁want ▁a ▁room .
+P-15	-0.1728 -2.0606 -0.2625 -0.0635 -0.3351 -0.2892 -0.2604
+S-31	▁Bitte ▁an sch na llen ! [de_DE]
+T-31	▁Please ▁fast en ▁your ▁se at belt .
+H-31	-1.3940026760101318	▁Please ▁ sque eze .
+D-31	-1.3940026760101318	▁Please ▁ sque eze .
+P-31	-1.7923 -4.7899 -1.6950 -0.0435 -0.8578 -0.2929 -0.2866
+S-49	▁Ich ▁sit ze ▁gerne ▁am ▁Strand [de_DE]
+T-49	▁I ▁like ▁to ▁sit ▁on ▁the ▁beach .
+H-49	-0.34014663100242615	▁I ▁like ▁sitting ▁at ▁the ▁beach .
+D-49	-0.34014663100242615	▁I ▁like ▁sitting ▁at ▁the ▁beach .
+P-49	-0.2047 -0.1953 -0.1992 -1.1134 -0.2456 -0.2156 -0.3402 -0.2867 -0.2605
+S-62	▁Hast ▁du ▁einen ▁Regen mantel ? [de_DE]
+T-62	▁Do ▁you ▁have ▁a ▁rain co at ?
+H-62	-0.4305667281150818	▁Do ▁you ▁have ▁a ▁rain ▁coa t ?
+D-62	-0.4305667281150818	▁Do ▁you ▁have ▁a ▁rain ▁coa t ?
+P-62	-0.3935 -0.2015 -0.4239 -0.1558 -0.0941 -2.1237 -0.1266 -0.2364 -0.2972 -0.2529
+S-132	▁Wie ▁komme ▁ich ▁zum ▁Flughafen ? [de_DE]
+T-132	▁How ▁do ▁I ▁get ▁to ▁the ▁airport ?
+H-132	-0.42709213495254517	▁How ▁do ▁I ▁get ▁to ▁the ▁airport ?
+D-132	-0.42709213495254517	▁How ▁do ▁I ▁get ▁to ▁the ▁airport ?
+P-132	-0.3726 -1.2200 -0.3940 -0.7439 -0.2736 -0.2712 -0.0627 -0.3665 -0.3085 -0.2579
+S-72	▁Wir ▁hatten ▁letzte s ▁Jahr ▁ein ▁Familien treffen . [de_DE]
+T-72	▁We ▁had ▁a ▁family ▁reuni on ▁last ▁summer .
+H-72	-0.4012041687965393	▁Last ▁year ▁we ▁had ▁a ▁family ▁meeting .
+D-72	-0.4012041687965393	▁Last ▁year ▁we ▁had ▁a ▁family ▁meeting .
+P-72	-1.0099 -0.1834 -0.4676 -0.4856 -0.2974 -0.0462 -0.6529 -0.3338 -0.2863 -0.2488
+S-123	▁Wann ▁ schließ t ▁das ▁Post am t ? [de_DE]
+T-123	▁At ▁what ▁time ▁does ▁the ▁post ▁office ▁close ?
+H-123	-0.5854977369308472	▁When ▁does ▁the ▁post ▁office ▁close ?
+D-123	-0.5854977369308472	▁When ▁does ▁the ▁post ▁office ▁close ?
+P-123	-0.1299 -0.6688 -0.3973 -2.0673 -0.2748 -0.8570 -0.3451 -0.2744 -0.2548
+S-137	▁Es ▁dauert ▁etwa ▁10 ▁Minuten ▁mit ▁dem ▁Bus . [de_DE]
+T-137	▁It ▁takes ▁about ▁10 ▁minutes ▁by ▁bus .
+H-137	-0.5756993889808655	▁It ▁is ▁about ▁10 ▁minutes ▁by ▁bus .
+D-137	-0.5756993889808655	▁It ▁is ▁about ▁10 ▁minutes ▁by ▁bus .
+P-137	-0.1618 -2.1107 -0.1616 -0.6512 -0.0962 -1.3481 -0.2969 -0.3626 -0.2939 -0.2740
+S-40	▁Unser ▁Pfarr er ▁ist ▁ein ▁guter ▁P rediger . [de_DE]
+T-40	▁Our ▁pastor ▁is ▁a ▁good ▁prea cher .
+H-40	-0.5493788719177246	▁Our ▁pastor ▁is ▁a ▁good ▁prea cher .
+D-40	-0.5493788719177246	▁Our ▁pastor ▁is ▁a ▁good ▁prea cher .
+P-40	-0.3455 -2.9295 -0.3136 -0.2495 -0.1603 -0.3362 -0.3265 -0.2993 -0.2824 -0.2509
+S-48	▁Ich ▁für chte ▁mich ▁vor ▁Hur rikan s . [de_DE]
+T-48	▁I ▁am ▁afraid ▁of ▁hur rica nes .
+H-48	-0.3686845004558563	▁I ▁am ▁afraid ▁of ▁hur rica nes .
+D-48	-0.3686845004558563	▁I ▁am ▁afraid ▁of ▁hur rica nes .
+P-48	-0.2896 -0.2701 -0.4141 -0.4167 -0.1653 -0.2982 -1.0040 -0.2804 -0.2833 -0.2651
+S-120	▁Dar f ▁ich ▁den ▁Vor hang ▁zu ziehen ? [de_DE]
+T-120	▁May ▁I ▁draw ▁the ▁curta in ?
+H-120	-0.8464634418487549	▁May ▁I ▁draw ▁the ▁curta in ?
+D-120	-0.8464634418487549	▁May ▁I ▁draw ▁the ▁curta in ?
+P-120	-0.5079 -0.3669 -3.1510 -0.4381 -1.8498 -0.2100 -0.5343 -0.2917 -0.2685
+S-34	▁Kön nten ▁Sie ▁ein ▁Foto ▁von ▁uns ▁machen ? [de_DE]
+T-34	▁Would ▁you ▁take ▁our ▁picture ?
+H-34	-0.5219530463218689	▁Could ▁you ▁take ▁a ▁picture ▁of ▁us ?
+D-34	-0.5219530463218689	▁Could ▁you ▁take ▁a ▁picture ▁of ▁us ?
+P-34	-0.5342 -0.2938 -1.0543 -0.4484 -1.1382 -0.3288 -0.3224 -0.5325 -0.2958 -0.2711
+S-55	▁Hast ▁du ▁ein ▁A spir in ▁für ▁mich ? [de_DE]
+T-55	▁Do ▁you ▁have ▁any ▁aspirin ?
+H-55	-0.4500000774860382	▁Do ▁you ▁have ▁a ▁aspirin ▁for ▁me ?
+D-55	-0.4500000774860382	▁Do ▁you ▁have ▁a ▁aspirin ▁for ▁me ?
+P-55	-0.5581 -0.1765 -0.1467 -0.7497 -1.4086 -0.4789 -0.1495 -0.2778 -0.3009 -0.2534
+S-76	▁Ich ▁möchte ▁einen ▁Kaffee ▁nach ▁dem ▁Essen . [de_DE]
+T-76	▁I ▁will ▁have ▁coffee ▁after ▁I ▁eat .
+H-76	-0.7356855273246765	▁I ▁want ▁coffee ▁after ▁the ▁meal .
+D-76	-0.7356855273246765	▁I ▁want ▁coffee ▁after ▁the ▁meal .
+P-76	-0.2554 -1.6171 -1.0380 -0.0428 -0.4235 -2.3625 -0.3274 -0.2953 -0.2592
+S-117	▁Ich ▁möchte ▁einen ▁Platz ▁am ▁Gang ▁buchen . [de_DE]
+T-117	▁I ▁would ▁like ▁to ▁book ▁an ▁a is le ▁se at .
+H-117	-0.6154914498329163	▁I ▁want ▁to ▁book ▁a ▁se at ▁in ▁the ▁lobby .
+D-117	-0.6154914498329163	▁I ▁want ▁to ▁book ▁a ▁se at ▁in ▁the ▁lobby .
+P-117	-0.3369 -1.5483 -0.3479 -0.1415 -0.3736 -0.1239 -0.0111 -0.8184 -0.3060 -3.1089 -0.3340 -0.2899 -0.2609
+S-66	▁Ich ▁möchte ▁eine ▁Zeitung ▁abon n ieren . [de_DE]
+T-66	▁I ▁want ▁to ▁sub scribe ▁to ▁a ▁newspaper .
+H-66	-0.7772113680839539	▁I ▁would ▁like ▁to ▁read ▁a ▁newspaper .
+D-66	-0.7772113680839539	▁I ▁would ▁like ▁to ▁read ▁a ▁newspaper .
+P-66	-0.2476 -2.9889 -0.0458 -0.4828 -2.4416 -0.4658 -0.2161 -0.3294 -0.2874 -0.2667
+S-129	▁Ich ▁gebe ▁Ihnen ▁eine ▁Spr it ze . [de_DE]
+T-129	▁I ' ll ▁give ▁you ▁an ▁inject ion .
+H-129	-0.5347616076469421	▁I ▁give ▁you ▁a ▁shot .
+D-129	-0.5347616076469421	▁I ▁give ▁you ▁a ▁shot .
+P-129	-0.6099 -2.0333 -0.2948 -0.2953 -0.2099 -0.2976 -0.2812 -0.2562
+S-104	▁Kann ▁ich ▁Ihnen ▁etwas ▁zu ▁essen ▁anbieten ? [de_DE]
+T-104	▁Can ▁I ▁offer ▁you ▁anything ▁to ▁eat ?
+H-104	-0.5754196643829346	▁Can ▁I ▁offer ▁you ▁something ▁to ▁eat ?
+D-104	-0.5754196643829346	▁Can ▁I ▁offer ▁you ▁something ▁to ▁eat ?
+P-104	-0.9426 -0.4560 -0.5339 -0.2319 -2.2835 -0.3726 -0.1255 -0.2647 -0.2808 -0.2628
+S-124	▁Wo ▁ist ▁das ▁nächste ▁Post am t ? [de_DE]
+T-124	▁Where ▁is ▁the ▁near est ▁post ▁office ?
+H-124	-0.34080246090888977	▁Where ▁is ▁the ▁near est ▁post ▁office ?
+D-124	-0.34080246090888977	▁Where ▁is ▁the ▁near est ▁post ▁office ?
+P-124	-0.0889 -0.5208 -0.3256 -0.4540 -0.0578 -1.0135 -0.1192 -0.2929 -0.2843 -0.2512
+S-68	▁Mein ▁Bruder ▁ist ▁j ün ger ▁als ▁ich [de_DE]
+T-68	▁My ▁brother ▁is ▁young er ▁than ▁me .
+H-68	-0.4569772481918335	▁My ▁brother ▁is ▁young er ▁than ▁I ▁am .
+D-68	-0.4569772481918335	▁My ▁brother ▁is ▁young er ▁than ▁I ▁am .
+P-68	-0.1294 -0.2732 -0.3746 -1.6527 -0.1003 -0.2239 -1.1316 -0.2448 -0.3611 -0.2797 -0.2553
+S-83	▁Ich ▁kann ▁keine ▁K rawat te ▁binden . [de_DE]
+T-83	▁I ▁cannot ▁tie ▁a ▁ bow tie .
+H-83	-0.7361533045768738	▁I ▁cannot ▁ ▁bind ▁a ▁tie .
+D-83	-0.7361533045768738	▁I ▁cannot ▁ ▁bind ▁a ▁tie .
+P-83	-0.2985 -0.7763 -1.1350 -1.8269 -0.5767 -1.1766 -0.2867 -0.2870 -0.2616
+S-121	▁Bitte ▁senden ▁Sie ▁uns ▁Ihren ▁Lebens lauf . [de_DE]
+T-121	▁Please , ▁send ▁us ▁your ▁curriculum ▁vitae .
+H-121	-0.8607346415519714	▁Please ▁tell ▁us ▁your ▁life cycle .
+D-121	-0.8607346415519714	▁Please ▁tell ▁us ▁your ▁life cycle .
+P-121	-0.4783 -1.4890 -0.2382 -0.7419 -2.9769 -0.9572 -0.2958 -0.2948 -0.2745
+S-6	▁Ist ▁das ▁die ▁Straße ▁in ▁die ▁Stadt ? [de_DE]
+T-6	▁Is ▁this ▁the ▁road ▁to ▁the ▁town ?
+H-6	-0.6095471978187561	▁Is ▁that ▁the ▁road ▁to ▁the ▁city ?
+D-6	-0.6095471978187561	▁Is ▁that ▁the ▁road ▁to ▁the ▁city ?
+P-6	-0.2407 -0.9501 -0.5509 -2.1543 -0.3651 -0.2350 -0.6984 -0.3356 -0.3059 -0.2593
+S-12	▁Kann st ▁du ▁mir ▁das ▁auf schreiben ? [de_DE]
+T-12	▁Could ▁you ▁write ▁that ▁down ▁for ▁me ?
+H-12	-0.727906346321106	▁Can ▁you ▁write ▁it ▁to ▁me ?
+D-12	-0.727906346321106	▁Can ▁you ▁write ▁it ▁to ▁me ?
+P-12	-0.7105 -0.2789 -0.7485 -1.8965 -1.3141 -0.0893 -0.9486 -0.2922 -0.2724
+S-63	▁Ich ▁freue ▁mich ▁dich ▁kennen zul erne n [de_DE]
+T-63	▁I ▁am ▁happy ▁to ▁meet ▁you .
+H-63	-0.7533390522003174	▁I ▁am ▁glad ▁to ▁see ▁you .
+D-63	-0.7533390522003174	▁I ▁am ▁glad ▁to ▁see ▁you .
+P-63	-0.7166 -0.9238 -2.6024 -0.2005 -1.1767 -0.2227 -0.4024 -0.2831 -0.2519
+S-58	▁Mein ▁Vater ▁ist ▁letzte ▁Woche ▁gestor ben . [de_DE]
+T-58	▁My ▁father ▁passed ▁away ▁last ▁month .
+H-58	-0.23924386501312256	▁My ▁father ▁passed ▁away ▁last ▁week .
+D-58	-0.23924386501312256	▁My ▁father ▁passed ▁away ▁last ▁week .
+P-58	-0.2150 -0.0833 -0.8139 -0.0113 -0.1253 -0.0358 -0.3177 -0.2910 -0.2597
+S-8	▁Das ▁ist ▁mir ▁zu ▁fort schritt lich . [de_DE]
+T-8	▁It ▁is ▁too ▁advanced ▁for ▁me .
+H-8	-0.8605549931526184	▁That ▁is ▁too ▁progressive ▁for ▁me .
+D-8	-0.8605549931526184	▁That ▁is ▁too ▁progressive ▁for ▁me .
+P-8	-1.5391 -1.0377 -0.7464 -1.9142 -1.3683 -0.2159 -0.3583 -0.2918 -0.2733
+S-57	▁Ich ▁habe ▁eine ▁Zahn fül lung ▁verloren . [de_DE]
+T-57	▁I ▁have ▁lost ▁a ▁fill ing .
+H-57	-0.723504364490509	▁I ▁lost ▁my ▁te eth .
+D-57	-0.723504364490509	▁I ▁lost ▁my ▁te eth .
+P-57	-0.2516 -0.3677 -2.1967 -2.0798 -0.0063 -0.3322 -0.2970 -0.2567
+S-84	▁Ich ▁muss ▁W ä sche ▁was chen . [de_DE]
+T-84	▁I ▁need ▁to ▁do ▁some ▁laundry .
+H-84	-0.8147324323654175	▁I ▁need ▁to ▁was h ▁was te .
+D-84	-0.8147324323654175	▁I ▁need ▁to ▁was h ▁was te .
+P-84	-0.2678 -1.5454 -0.2473 -0.4273 -0.5552 -3.4313 -0.5956 -0.5300 -0.2860 -0.2616
+S-69	▁Bitte ▁ schließ e ▁die ▁Gard inen ! [de_DE]
+T-69	▁Please ▁close ▁the ▁curta ins .
+H-69	-0.7369263768196106	▁Please ▁close ▁the ▁curta ins .
+D-69	-0.7369263768196106	▁Please ▁close ▁the ▁curta ins .
+P-69	-0.5575 -2.1226 -0.5729 -1.2087 -0.4473 -0.4304 -0.2852 -0.2709
+S-99	▁Was ▁für ▁eine ▁En ttä us chung ! [de_DE]
+T-99	▁What ▁a ▁dis appoint ment !
+H-99	-0.4390597939491272	▁What ▁a ▁dis appoint ment !
+D-99	-0.4390597939491272	▁What ▁a ▁dis appoint ment !
+P-99	-0.7835 -0.6743 -0.0550 -0.1396 -0.1354 -1.1739 -0.2881 -0.2627
+S-9	▁Bitte ▁ gib ▁mir ▁eine ▁neue ▁Chance ! [de_DE]
+T-9	▁Give ▁me ▁a ▁new ▁chance .
+H-9	-0.4969528019428253	▁Please ▁give ▁me ▁a ▁new ▁opportunity .
+D-9	-0.4969528019428253	▁Please ▁give ▁me ▁a ▁new ▁opportunity .
+P-9	-0.6069 -0.3127 -0.2979 -0.9422 -0.3059 -0.8999 -0.5476 -0.2922 -0.2673
+S-119	▁Dar f ▁ich ▁das ▁Fenster ▁zu machen ? [de_DE]
+T-119	▁May ▁I ▁closed ▁the ▁window ?
+H-119	-0.5406005382537842	▁May ▁I ▁turn ▁the ▁window ?
+D-119	-0.5406005382537842	▁May ▁I ▁turn ▁the ▁window ?
+P-119	-0.2373 -0.2729 -1.4001 -0.3083 -0.5788 -0.9775 -0.2805 -0.2693
+S-140	▁Wann ▁f äng t ▁das ▁Spiel ▁an ? [de_DE]
+T-140	▁When ▁does ▁the ▁match ▁begin ?
+H-140	-0.5909638404846191	▁When ▁does ▁the ▁game ▁start ?
+D-140	-0.5909638404846191	▁When ▁does ▁the ▁game ▁start ?
+P-140	-0.3642 -1.3313 -0.9082 -0.7153 -0.5797 -0.2911 -0.2838 -0.2541
+S-24	▁Ich ▁ge h ▁auf ' s ▁College . [de_DE]
+T-24	▁I ▁go ▁to ▁college .
+H-24	-0.5014888644218445	▁I ' m ▁going ▁to ▁college .
+D-24	-0.5014888644218445	▁I ' m ▁going ▁to ▁college .
+P-24	-0.3145 -0.6339 -0.7787 -0.3699 -0.3276 -1.2090 -0.3362 -0.2823 -0.2611
+S-22	▁Die ▁Zeit ▁ver geht ▁im ▁Flug e . [de_DE]
+T-22	▁Time ▁fli es .
+H-22	-0.29335203766822815	▁Time ▁is ▁running ▁out .
+D-22	-0.29335203766822815	▁Time ▁is ▁running ▁out .
+P-22	-0.2321 -0.2217 -0.2185 -0.5044 -0.3251 -0.2805 -0.2712
+S-116	▁Ich ▁möchte ▁einen ▁Fenster platz ▁buchen . [de_DE]
+T-116	▁I ▁would ▁like ▁to ▁book ▁a ▁se at ▁at ▁the ▁window .
+H-116	-0.3585526943206787	▁I ▁want ▁to ▁book ▁a ▁window ▁se at .
+D-116	-0.3585526943206787	▁I ▁want ▁to ▁book ▁a ▁window ▁se at .
+P-116	-0.2484 -1.3068 -0.3621 -0.1123 -0.3776 -0.0584 -0.4927 -0.1273 -0.3046 -0.2876 -0.2662
+S-79	▁Möchte n ▁Sie , ▁dass ▁ich ▁nach schen ke ? [de_DE]
+T-79	▁Would ▁you ▁care ▁for ▁a ▁re fill ?
+H-79	-0.7634124159812927	▁Do ▁you ▁want ▁me ▁to ▁take ▁part ?
+D-79	-0.7634124159812927	▁Do ▁you ▁want ▁me ▁to ▁take ▁part ?
+P-79	-2.0394 -0.2907 -0.3461 -0.2616 -0.4082 -1.9026 -1.0855 -0.7467 -0.2918 -0.2614
+S-25	▁Ich ▁habe ▁für ▁meine ▁Arbeit ▁eine ▁Ein s ▁bekommen . [de_DE]
+T-25	▁I ▁got ▁an ▁' A ' ▁on ▁my ▁paper .
+H-25	-0.8184608817100525	▁I ▁got ▁a ▁' yes ' ▁on ▁my ▁paper .
+D-25	-0.8184608817100525	▁I ▁got ▁a ▁' yes ' ▁on ▁my ▁paper .
+P-25	-0.3267 -1.7792 -1.6263 -1.2738 -0.9629 -0.2515 -1.9020 -0.3210 -0.4876 -0.3358 -0.2973 -0.2575
+S-135	▁Ich ▁möchte ▁in ▁einem ▁Doppel zimmer ▁über na chten . [de_DE]
+T-135	▁I ' d ▁like ▁to ▁stay ▁in ▁a ▁double ▁room .
+H-135	-0.6157445907592773	▁I ▁would ▁like ▁to ▁stay ▁in ▁a ▁double ▁room .
+D-135	-0.6157445907592773	▁I ▁would ▁like ▁to ▁stay ▁in ▁a ▁double ▁room .
+P-135	-0.1921 -1.8312 -0.0779 -0.5227 -2.7689 -0.1419 -0.1739 -0.7147 -0.0866 -0.3207 -0.2918 -0.2664
+S-81	▁Ich ▁be nut ze ▁gerne ▁Farb stift e . [de_DE]
+T-81	▁I ▁like ▁to ▁use ▁colour ed ▁pen cil s .
+H-81	-0.7810248732566833	▁I ▁am ▁ke en ▁to ▁use ▁colour stift s .
+D-81	-0.7810248732566833	▁I ▁am ▁ke en ▁to ▁use ▁colour stift s .
+P-81	-0.2168 -2.3149 -0.9187 -0.0754 -0.8788 -0.3385 -0.0949 -2.9047 -0.7728 -0.3094 -0.2865 -0.2609
+S-26	▁Ich ▁habe ▁für ▁meine ▁Arbeit ▁eine ▁Fünf ▁bekommen . [de_DE]
+T-26	▁I ▁got ▁a ▁' F ' ▁on ▁my ▁paper .
+H-26	-0.6914195418357849	▁I ▁got ▁a ▁five ▁on ▁my ▁paper .
+D-26	-0.6914195418357849	▁I ▁got ▁a ▁five ▁on ▁my ▁paper .
+P-26	-0.3237 -1.3558 -0.2923 -2.1651 -1.0193 -0.2404 -0.6346 -0.3237 -0.2976 -0.2617
+S-134	▁Ich ▁möchte ▁Dir ▁etwas ▁über ▁meine ▁Familie ▁erzählen . [de_DE]
+T-134	▁I ▁want ▁to ▁tell ▁you ▁something ▁about ▁my ▁family .
+H-134	-0.6078518033027649	▁I ▁would ▁like ▁to ▁say ▁something ▁about ▁my ▁family .
+D-134	-0.6078518033027649	▁I ▁would ▁like ▁to ▁say ▁something ▁about ▁my ▁family .
+P-134	-0.4729 -2.2305 -0.1074 -0.2985 -2.2071 -0.5586 -0.2730 -0.1859 -0.0989 -0.2949 -0.2918 -0.2748
+S-75	▁Frühstück ▁wird ▁nicht ▁nach ▁11 ▁Uhr ▁servi ert . [de_DE]
+T-75	▁Breakfast ▁is ▁not ▁served ▁after ▁11 ▁a . m .
+H-75	-0.6347610354423523	▁Food ▁is ▁not ▁served ▁after ▁11 ▁a . m .
+D-75	-0.6347610354423523	▁Food ▁is ▁not ▁served ▁after ▁11 ▁a . m .
+P-75	-4.3897 -0.8831 -0.1624 -0.4023 -0.2651 -0.0891 -0.2379 -0.2277 -0.1102 -0.2539 -0.3358 -0.2599
+S-133	▁Wie ▁weit ▁ist ▁es ▁vom ▁Hotel ▁zum ▁Bahnhof ? [de_DE]
+T-133	▁How ▁far ▁is ▁it ▁from ▁the ▁hotel ▁to ▁the ▁station ?
+H-133	-0.35210660099983215	▁How ▁far ▁is ▁it ▁from ▁the ▁hotel ▁to ▁the ▁station ?
+D-133	-0.35210660099983215	▁How ▁far ▁is ▁it ▁from ▁the ▁hotel ▁to ▁the ▁station ?
+P-133	-0.4566 -0.8948 -0.4214 -0.4123 -0.2947 -0.2831 -0.2104 -0.2705 -0.2022 -0.2011 -0.3631 -0.3054 -0.2618
+Generate valid with beam=5: BLEU = 39.54 68.2/44.8/34.0/26.7 (BP = 0.969 ratio = 0.969 hyp_len = 850 ref_len = 877)
